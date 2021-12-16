@@ -1,7 +1,8 @@
 # Todo-App
-Docer、AWS、Djangoを用いたTodoアプリを製作しました。  
-画像
-## URL
+Docer、AWS、Djangoを用いた[Todo-App](http://kazuya-portfolio.com/list/)を製作しました。    
+
+
+![スクリーンショット 2021-12-16 160457](https://user-images.githubusercontent.com/87218628/146324002-636cd72f-62c8-4f1e-8aa0-42cb760bb8a3.png)
 
 ## Infrastructure
 ![](https://user-images.githubusercontent.com/87218628/145961368-510f1b40-7187-4271-9bb2-2fadcbd43c84.jpg)
