@@ -82,6 +82,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# PostgreSQLを使うための設定。値は環境変数からpullしてくる。
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -129,9 +130,20 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+# Djangoがstatic and media filesのvolumeを使うように設定する。
+# Static – Files are assets used for our Django HTML content such as JavaScript, CSS and Image files.
+# Media – Files which are dynamically added to our app at runtime, such as user uploaded data like profile pictures.
+
+# Django で扱うstatic and media filesのURL設定をする。
+# All static file URLs は自動的に/static/static/が先頭につく。
+# All media file URLs は自動的に/static/media/が先頭につく。
+# このURL構成を利用して、nginx reverse proxyの設定を後で行う。
 STATIC_URL = '/static/static/'
 MEDIA_URL = '/static/media/'
 
+# static and media filesがどこに保存されるのかを設定する。
+# ユーザーがプロフィール画像を投稿した時はMEDIA_ROOTに保存される。
+# collectstatic command でstatic files はSTATIC_ROOTに保存される。
 MEDIA_ROOT = '/vol/web/media'
 STATIC_ROOT = '/vol/web/static'
 

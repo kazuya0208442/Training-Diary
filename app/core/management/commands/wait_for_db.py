@@ -1,3 +1,8 @@
+# Dockerを使ってDjangoとデータベースを起動すると、１つ問題がある。
+# たとえ、depends on で app の前に db が起動するように設定しても、それは、データベースの初期化が終わるところまで保証していない。
+# つまり、データベースが完全に立ち上がっていない状況でDJANGOが起動してしまい、crashしてしまう可能性があるのだ。
+# よって、Djangoにはデータベースが完全に立ち上がるまで待機してもらうようにコードを書く。
+
 """
 Django command to wait for the database to be available.
 """
@@ -25,3 +30,5 @@ class Command(BaseCommand):
                 time.sleep(1)
 
         self.stdout.write(self.style.SUCCESS('Database available!'))
+
+# As soon as the exception stops being thrown, we can assume the database is now available.

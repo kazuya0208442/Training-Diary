@@ -1,12 +1,20 @@
 version: "3.9"
 
 services:
+
   app:
     build:
       context: .
+    # restart: always にすることで、crushしたときに自動的にappがリスタートするように設定する。本番環境での安定性を向上させる。
     restart: always
+    # /vol/web のデータをstatic-dataに紐づける。これでproxyがアクセスできる。
     volumes:
       - static-data:/vol/web
+    # 環境変数を決定するときは${ENV}のように、変数を使う。
+    # これで、パスワードなどの機密情報をGit repoに挙げなくて済む。
+    # 環境変数はdeployするサーバーで、.env ファイルを通過することで決定する。
+    # Git には一旦、dummy の.env.sampleを置いておくとよい。
+    
     environment:
       - DB_HOST=db
       - DB_NAME=${DB_NAME}
@@ -17,9 +25,13 @@ services:
     depends_on:
       - db
 
+
+
   db:
     image: postgres:13-alpine
+    # restart: always にすることで、crushしたときに自動的にdbがリスタートするように設定する。本番環境での安定性を向上させる。
     restart: always
+    # container が消えてもデータが残るように/var/lib/postgresql/dataのデータをpostgres-dataに紐づける。
     volumes:
       - postgres-data:/var/lib/postgresql/data
     environment:
@@ -27,17 +39,36 @@ services:
       - POSTGRES_USER=${DB_USER}
       - POSTGRES_PASSWORD=${DB_PASS}
 
+
+  # reverse proxy の設定
   proxy:
+    # build context をproxy/ directoryに設定する。
+    # これで、root directoryのDockerfileではなく、proxy/Dockerfileを使うことができる。
     build:
       context: ./proxy
+    
+    # restart: always にすることで、crushしたときに自動的にproxyがリスタートするように設定する。本番環境での安定性を向上させる。
     restart: always
+    # app が先に起動する。
     depends_on:
       - app
+    # hostの80番ポートとproxy container の8000番ポートをつなげる。これにより、HTTP port(80)からリクエストを受け取るようになる。
     ports:
       - 80:8000
+    # Maps the static-data volume to /vol/static in the container
     volumes:
       - static-data:/vol/static
+      # - static-data:/vol/web      # /vol/webだと思うんだけど。
 
+
+
+# Docker Composeで管理する名前付きのvolumeを書く。
+# このvolumeにより、コンテナを削除した後も中身のデータは保存されます。
+# これで、media fileはプロジェクト内のdata/web/に保存されるのではなく、
+# static-data　という名前付きのvolumeに保存されるようになる。
+# media fileはproxyからserveされるようになる。
 volumes:
+  # PostgreSQL database のデータを保存
   postgres-data:
+  # static data and media files を保存
   static-data:

@@ -1,14 +1,21 @@
+# DockerCompose のバージョンを指定する。
 version: '3.9'
 
 services:
+
+# app という名の service を作る。
   app:
     build:
+      # build context を current directory にする。
       context: .
+    # host の 8000番ポートと、コンテナの8000番ポートをつなげる。
     ports:
       - 8000:8000
+    # プロジェクト内の /app directory をコンテナ内の/app directoryに紐づける。コード変更を同期させることができる。
     volumes:
       - ./app:/app
       - ./data/web:/vol/web
+    # djangoの環境変数の設定をする。dbが接続できるようにするため。下記のdbの設定と同じにする必要がある。
     environment:
       - SECRET_KEY=devsecretkey
       - DEBUG=1
@@ -16,14 +23,17 @@ services:
       - DB_NAME=devdb
       - DB_USER=devuser
       - DB_PASS=changeme
+    # depends on によってappの前にdbが起動する。また、appコンテナの内部のネットワーク経由でdbにアクセスできる。
     depends_on:
       - db
+    # データベースの起動を待ってから、データベースに反映させて、サーバーを起動。
     command: >
       sh -c "python manage.py wait_for_db &&
-             python manage.py makemigrations &&          #これ付け足してみた
+             python manage.py makemigrations &&          #これ付け足して、データベースを反映させた。
              python manage.py migrate &&
              python manage.py runserver 0.0.0.0:8000"
 
+  # dbの環境変数の設定 local でしか使わない。deployment のところで設定する箇所がある。
   db:
     image: postgres:13-alpine
     environment:

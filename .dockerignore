@@ -1,3 +1,6 @@
+# Docker build context に入れてほしくないものを記載する。
+# Docker image にする必要のないものを排除できる
+
 # Git
 .git
 .gitignore

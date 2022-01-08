@@ -26,6 +26,8 @@ urlpatterns = [
     path('', include('core.urls')),
 ]
 
+
+# 開発環境で、DEBUG mode の時のみ、urlpatternsにmediaURLとmediarootを追加する。
 if settings.DEBUG:
     urlpatterns += static(
         settings.MEDIA_URL,
