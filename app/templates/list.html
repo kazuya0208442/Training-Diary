@@ -93,7 +93,16 @@
     margin: 0 auto;
     max-width: 1070px;
     margin-bottom: 50px;
-}
+  }
+
+  a:hover {
+    color: #991e29;
+    text-decoration: none;
+  }
+
+  .card-header {
+    font-size: 30px;
+  }
 
 </style>
 
@@ -133,10 +142,10 @@
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/eZA0AnSdbBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eZA0AnSdbBI?autoplay=1&mute=1&start=28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  <div class="card-footer text-muted">
-    期限:&nbsp;3月25日(残り62日)
+  <div class="card-footer">
+    期限:&nbsp;3月25日まで残り<span class="purple">62</span>日
   </div>
 </div>
 
@@ -149,8 +158,8 @@
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZOFO_MzZi50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  <div class="card-footer text-muted">
-    期限:&nbsp;2月25日(残り32日)
+  <div class="card-footer">
+    期限:&nbsp;2月25日まで残り<span class="purple">32</span>日
   </div>
 </div>
 
@@ -168,6 +177,11 @@
   </div>
 </div>
 {% endblock %} 
+
+
+
+
+
 
 {% block content %} 
 
@@ -187,6 +201,11 @@
   }
 
 </style>
+
+
+
+
+
 
 <div class="container">
     <a href="{% url 'create' %}" class="btn btn-secondary mb-2" tabindex="-1" role="button" aria-disabled="true">新規作成</a>
