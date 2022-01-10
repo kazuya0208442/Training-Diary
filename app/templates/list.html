@@ -59,6 +59,24 @@
 {% endblock %} 
 
 {% block content %} 
+
+<style>
+  .card-deck {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+  justify-content: space-around;
+  }
+
+  .card-deck .card {
+  flex-basis: 25%;
+  max-width: 360px;
+  min-width: 310px;
+  margin-bottom: 100px;
+  }
+
+</style>
+
 <div class="container">
     <a href="{% url 'create' %}" class="btn btn-secondary mb-2" tabindex="-1" role="button" aria-disabled="true">新規作成</a>
     {% for item in object_list %} 
