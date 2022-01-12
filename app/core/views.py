@@ -33,5 +33,5 @@ class TodoUpdate(UpdateView):
     success_url = reverse_lazy('list')
 
 class Training(ListView):
-    template_name = 'test.html'
+    template_name = 'app_home.html'
     model = Training
