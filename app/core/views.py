@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
-from .models import TodoModel
+from .models import TodoModel, Training
 from django.urls import reverse_lazy
 
 
@@ -31,3 +31,7 @@ class TodoUpdate(UpdateView):
     model = TodoModel
     fields = ('title', 'memo', 'priority', 'duedate')
     success_url = reverse_lazy('list')
+
+class Training(ListView):
+    template_name = 'test.html'
+    model = Training
