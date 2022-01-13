@@ -441,12 +441,12 @@
 </style>
 
 <div class="card-container">
-{% for item in object_list %}
+{% for item in training %}
   <div class="card bg-light mb-5 mb-5" style="max-width: 25rem;">
     <div class="card-header main">Header</div>
     <div class="card-body">
-      <h5 class="card-title">{{item.title}}</h5>
-      <p class="card-text main">{{item.memo}}</p>
+      <h5 class="card-title">{{item.dairy_target}}</h5>
+      <p class="card-text main">{{item.dairy_target_summary}}</p>
     </div>
   </div>
 {% endfor %}
