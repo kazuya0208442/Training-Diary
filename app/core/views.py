@@ -32,6 +32,8 @@ class TodoUpdate(UpdateView):
     fields = ('title', 'memo', 'priority', 'duedate')
     success_url = reverse_lazy('list')
 
+
+
 class Training(ListView):
     template_name = 'app_home.html'
     model = Training
