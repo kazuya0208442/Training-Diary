@@ -1,3 +1,4 @@
+from django.db.models import fields
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
 from .models import Staff, Target, TodoModel, Training, Week
@@ -38,12 +39,15 @@ class Home(ListView):
    template_name = 'app_home.html'
    context_object_name = 'target'
    model = Target
+   
 
    def get_context_data(self, **kwargs):
+       test = Target.objects.values_list('long_target', flat=True)
        context = super(Home, self).get_context_data(**kwargs)
        context.update({
            'training': Training.objects.all(),
            'week': Week.objects.all(),
            'staff': Staff.objects.all(),
+           'test': test,
        })
        return context
