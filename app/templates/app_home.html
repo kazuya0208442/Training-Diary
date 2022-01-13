@@ -330,18 +330,18 @@
   </div>
 </div>
 
-
+{% for item in target %}
 <div class="card text-center">
   <div class="card-header target">
     大会での達成目標(<span class="purple">長期</span>目標)
   </div>
   <div class="card-body">
-    <h5 class="card-title">{{ object_list }}</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <h5 class="card-title">{{ item.long_target }}</h5>
+    <p class="card-text">{{ item.long_target_summary }}</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/eZA0AnSdbBI?autoplay=1&mute=1&start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="card-footer">
-    期限:&nbsp;3月25日まで残り<span class="purple">62</span>日
+    期限:&nbsp;{{ item.long_target_date }}まで残り<span class="purple">62</span>日
   </div>
 </div>
 
@@ -350,8 +350,8 @@
     今月の達成目標(<span class="purple">中期</span>目標)
   </div>
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <h5 class="card-title">{{ item.middle_target }}</h5>
+    <p class="card-text">{{ item.middle_target_summary }}</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZOFO_MzZi50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="card-footer">
@@ -364,14 +364,17 @@
     今週の達成目標(<span class="purple">短期</span>目標)
   </div>
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <h5 class="card-title">{{ item.short_target }}</h5>
+    <p class="card-text">{{ item.middle_target_summary }}</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
   <div class="card-footer text-muted">
     頑張っていきましょう！！
   </div>
 </div>
+{% endfor %}
+
+
 {% endblock %} 
 
 
