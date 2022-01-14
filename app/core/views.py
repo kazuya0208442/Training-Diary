@@ -61,3 +61,13 @@ class Target_detail(DetailView):
 class Card_detail(DetailView):
     template_name = 'app_card_detail.html'
     model = Training
+
+
+class Week_detail(DetailView):
+    template_name = 'app_week_detail.html'
+    model = Week
+
+
+class Staff_detail(DetailView):
+    template_name = 'app_staff_detail.html'
+    model = Staff
