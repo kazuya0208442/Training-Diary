@@ -504,6 +504,7 @@
 
 {% for item in week %}
 <div class="card text-center mt-5">
+  <a href="{% url 'w_detail' item.pk %}" class="link"></a>
   <div class="card-header">
     今週の振り返り
   </div>
@@ -517,6 +518,7 @@
 
 {% for item in staff %}
 <div class="card text-center mt-5">
+  <a href="{% url 's_detail' item.pk %}" class="link"></a>
   <div class="card-header">
     スタッフから
   </div>
