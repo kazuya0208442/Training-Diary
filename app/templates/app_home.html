@@ -95,8 +95,18 @@
     width: 90%;
     margin: 0 auto;
     max-width: 1070px;
-    /* margin-bottom: 50px; */
     margin-bottom: 120px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .text-center .link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   a:hover {
@@ -115,13 +125,21 @@
     white-space: nowrap;
   }
 
+  .card-body {
+    position: relative;
+  }
+
   .card-footer {
     background-color: #fff1f1;
   }
 
   iframe {
     width: 90%;
+    position: relative;
+    z-index: 10;
   }
+
+
 
   @media screen and (max-width: 1170px) {
     .header__li.diary {
@@ -334,6 +352,7 @@
 
 {% for item in target %}
 <div class="card text-center">
+  <a class = link href="{% url 't_detail' item.pk %}"></a>
   <div class="card-header target">
     大会での達成目標(<span class="purple">長期</span>目標)
   </div>
