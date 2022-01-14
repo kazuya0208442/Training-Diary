@@ -1,5 +1,5 @@
 from django.db.models import fields
-from django.shortcuts import render
+# from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
 from .models import Staff, Target, TodoModel, Training, Week
 from django.urls import reverse_lazy
@@ -51,3 +51,7 @@ class Home(ListView):
            'test': test,
        })
        return context
+
+class Target_detail(DeleteView):
+    template_name = 'app_target_detail.html'
+    model = Target
