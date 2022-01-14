@@ -52,6 +52,12 @@ class Home(ListView):
        })
        return context
 
-class Target_detail(DeleteView):
+
+class Target_detail(DetailView):
     template_name = 'app_target_detail.html'
     model = Target
+
+
+class Card_detail(DetailView):
+    template_name = 'app_card_detail.html'
+    model = Training
