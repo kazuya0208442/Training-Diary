@@ -148,6 +148,26 @@
     z-index: 10;
   }
 
+  .wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 840px;
+    max-height: 472.5px;
+    margin: 0 auto;
+}
+  .wrapper:before {
+    content:"";
+    display: block;
+    padding-top: 56.25%; /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
+}
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 
   @media screen and (max-width: 1170px) {
@@ -368,7 +388,9 @@
   <div class="card-body">
     <h5 class="card-title">{{ item.long_target }}</h5>
     <p class="card-text">{{ item.long_target_summary }}</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/eZA0AnSdbBI?autoplay=1&mute=1&start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="wrapper">
+      <iframe class="content" width="560" height="315" src="https://www.youtube.com/embed/eZA0AnSdbBI?autoplay=1&mute=1&start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
   <div class="card-footer">
     期限:&nbsp;{{ item.long_target_date }}まで残り<span class="purple">62</span>日
@@ -383,7 +405,9 @@
   <div class="card-body">
     <h5 class="card-title">{{ item.middle_target }}</h5>
     <p class="card-text">{{ item.middle_target_summary }}</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZOFO_MzZi50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="wrapper">
+      <iframe class="content" width="560" height="315" src="https://www.youtube.com/embed/ZOFO_MzZi50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
   <div class="card-footer">
     期限:&nbsp;2月25日まで残り<span class="purple">32</span>日
