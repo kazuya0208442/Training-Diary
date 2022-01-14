@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+    <form action='' method='POST'>{% csrf_token %}
+    {{ form.long_target }}
+    {{ form.long_target_summary }}
+    {{ form.long_target_date }}
+    {{ form.middle_target }}
+    {{ form.middle_target_summary }}
+    {{ form.short_target }}
+    {{ form.short_target_summary }}
+    <input type='submit' value='update'>
+    </form>
+{% endblock content %}

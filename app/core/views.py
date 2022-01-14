@@ -71,3 +71,12 @@ class Week_detail(DetailView):
 class Staff_detail(DetailView):
     template_name = 'app_staff_detail.html'
     model = Staff
+
+
+class TargetUpdate(UpdateView):
+    template_name = 'app_target_update.html'
+    model = Target
+    fields = ('long_target', 'long_target_summary', 'long_target_date', 'middle_target', 'middle_target_summary', 'short_target', 'short_target_summary')
+    # success_url = reverse_lazy('t_detail')      # 静的ページにしか使えない。
+    def get_success_url(self):
+        return reverse_lazy('t_detail', kwargs={'pk': self.kwargs['pk']})

@@ -381,7 +381,7 @@
 
 {% for item in target %}
 <div class="card text-center">
-  <a class = link href="{% url 't_detail' item.pk %}"></a>
+  <a class = link href="{% url 't_update' item.pk %}"></a>
   <div class="card-header target">
     大会での達成目標(<span class="purple">長期</span>目標)
   </div>
@@ -398,7 +398,7 @@
 </div>
 
 <div class="card text-center">
-  <a class = link href="{% url 't_detail' item.pk %}"></a>
+  <a class = link href="{% url 't_update' item.pk %}"></a>
   <div class="card-header target">
     今月の達成目標(<span class="purple">中期</span>目標)
   </div>
@@ -415,7 +415,7 @@
 </div>
 
 <div class="card text-center">
-  <a class = link href="{% url 't_detail' item.pk %}"></a>
+  <a class = link href="{% url 't_update' item.pk %}"></a>
   <div class="card-header target">
     今週の達成目標(<span class="purple">短期</span>目標)
   </div>
