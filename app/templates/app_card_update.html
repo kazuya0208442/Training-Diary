@@ -1,0 +1,16 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+    <form action='' method='POST'>{% csrf_token %}
+    {{ form.dairy_target }}
+    {{ form.dairy_target_menu }}
+    {{ form.dairy_target_summary }}
+    {{ form.training_time }}
+    {{ form.stability_time }}
+    {{ form.stretch_time }}
+    {{ form.body_temperature }}
+    {{ form.body_weight }}
+    {{ form.sleeping_hours }}
+    <input type='submit' value='update'>
+    </form>
+{% endblock content %}

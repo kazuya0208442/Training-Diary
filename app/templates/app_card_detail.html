@@ -427,6 +427,14 @@
     <div class="card-body">
       <h5 class="card-title">{{object.dairy_target}}</h5>
       <p class="card-text main">{{object.dairy_target_summary}}</p>
+      <p class="card-text main">{{object.dairy_target_menu}}</p>
+      <p class="card-text main">{{object.training_time}}</p>
+      <p class="card-text main">{{object.stability_time}}</p>
+      <p class="card-text main">{{object.stretch_time}}</p>
+      <p class="card-text main">{{object.body_temperature}}</p>
+      <p class="card-text main">{{object.body_weight}}</p>
+      <p class="card-text main">{{object.sleeping_hours}}</p>
+      <a href="{% url 'c_update' object.pk %}" class="btn btn-info" tabindex="-1" role="button" aria-disabled="true">編集画面へ</a>
     </div>
   </div>
 </div>
