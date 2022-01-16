@@ -43,12 +43,15 @@ class Home(ListView):
 
    def get_context_data(self, **kwargs):
        test = Target.objects.values_list('long_target', flat=True)
+       s_time = Training.objects.values_list('sleeping_hours', flat=True)
+       s_time = [float(v) for v in s_time]    # DECIMAL prefix を外す方法
        context = super(Home, self).get_context_data(**kwargs)
        context.update({
            'training': Training.objects.all(),
            'week': Week.objects.all(),
            'staff': Staff.objects.all(),
            'test': test,
+           's_time': s_time,
        })
        return context
 
