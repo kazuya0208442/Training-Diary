@@ -484,6 +484,11 @@
   .card.bg-light {
     flex-basis: 48%;
   }
+
+  .chart-container {
+    max-height: 90% !important;
+    max-width: 90% !important;
+  }
   
 }
 
@@ -496,6 +501,11 @@
   .card-container {
     justify-content: center;
 }
+
+  .chart-container {
+    max-height: 95% !important;
+    max-width: 95% !important;
+  }
 
 }
 
@@ -537,26 +547,28 @@
     <h5 class="card-title">{{item.title}}</h5>
     <p class="card-text">{{item.summary}}</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
-    <canvas id="myChart" width="400" height="400"></canvas>
+    <div class="chart-container" style="position: relative; max-width: 80%; max-height: 80%; margin: 0 auto;">
+      <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
   </div>
 </div>
 
 <script>
   const ctx = document.getElementById('myChart').getContext('2d');
   const myChart = new Chart(ctx, {
-      type: 'bar',
+      type: 'line',
       data: {
           labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
           datasets: [{
-              label: '# of Votes',
+              label: '',
               data: [12, 19, 3, 5, 2, 3],
               backgroundColor: [
-                  'rgba(255, 99, 132, 0.2)',
-                  'rgba(54, 162, 235, 0.2)',
-                  'rgba(255, 206, 86, 0.2)',
-                  'rgba(75, 192, 192, 0.2)',
-                  'rgba(153, 102, 255, 0.2)',
-                  'rgba(255, 159, 64, 0.2)'
+                  'rgba(0, 0, 0, 0)',
+                  // 'rgba(54, 162, 235, 0.2)',
+                  // 'rgba(255, 206, 86, 0.2)',
+                  // 'rgba(75, 192, 192, 0.2)',
+                  // 'rgba(153, 102, 255, 0.2)',
+                  // 'rgba(255, 159, 64, 0.2)'
               ],
               borderColor: [
                   'rgba(255, 99, 132, 1)',
@@ -566,14 +578,49 @@
                   'rgba(153, 102, 255, 1)',
                   'rgba(255, 159, 64, 1)'
               ],
-              borderWidth: 1
+              borderWidth: 3
           }]
       },
       options: {
-          scales: {
-              y: {
-                  beginAtZero: true
+
+        legend: {
+          display: false
+        },
+
+        title: {
+            display: true,
+            text: '今週の睡眠時間',
+            fontSize: 30,
+            fontColor: '#122',
+            padding: 20,
+            fontFamily: 'Kiwi Maru',
+        },
+
+        maintainAspectRatio: false,
+
+        scales: {
+            y: {
+                beginAtZero: true,
+              },
+
+            yAxes: [{
+              scaleLabel: {
+                display: true,
+                labelString: '睡眠時間',
+                fontSize: 25,
+                fontColor: '#122',
+                // fontStyle: 'middium',
+                fontFamily: 'Kiwi Maru',
+                // padding: 20,
+                // usePointStyle: True,
+                },
+              
+              ticks: {
+                suggestedMax: 40,
+                suggestedMin: 0,
+                stepSize: 10,
               }
+            }]
           }
       }
   });
