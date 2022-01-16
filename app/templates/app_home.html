@@ -523,7 +523,7 @@
 </div>
 
 
-<div class="container">
+<!-- <div class="container">
     <a href="{% url 'create' %}" class="btn btn-secondary mb-2" tabindex="-1" role="button" aria-disabled="true">新規作成</a>
     {% for item in object_list %} 
     <div class="alert alert-{{ item.priority }}" role="alert">
@@ -533,7 +533,7 @@
         <a href="{% url 'detail' item.pk %}" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">詳細画面へ</a>
     </div>
     {% endfor %} 
-</div>
+</div> -->
 
 {% for item in week %}
 <div class="card text-center mt-5">
@@ -566,11 +566,6 @@
               data: {{ s_time }},
               backgroundColor: [
                   'rgba(0, 0, 0, 0)',
-                  // 'rgba(54, 162, 235, 0.2)',
-                  // 'rgba(255, 206, 86, 0.2)',
-                  // 'rgba(75, 192, 192, 0.2)',
-                  // 'rgba(153, 102, 255, 0.2)',
-                  // 'rgba(255, 159, 64, 0.2)'
               ],
               borderColor: [
                   // 'rgba(255, 99, 132, 1)',
