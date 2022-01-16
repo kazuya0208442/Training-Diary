@@ -484,6 +484,11 @@
   .card.bg-light {
     flex-basis: 48%;
   }
+
+  .chart-container {
+    max-height: 90% !important;
+    max-width: 90% !important;
+  }
   
 }
 
@@ -496,6 +501,11 @@
   .card-container {
     justify-content: center;
 }
+
+  .chart-container {
+    max-height: 95% !important;
+    max-width: 95% !important;
+  }
 
 }
 
@@ -550,7 +560,7 @@
       data: {
           labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
           datasets: [{
-              label: 'タイトル',
+              label: '',
               data: [12, 19, 3, 5, 2, 3],
               backgroundColor: [
                   'rgba(0, 0, 0, 0)',
@@ -573,17 +583,44 @@
       },
       options: {
 
+        legend: {
+          display: false
+        },
+
         title: {
             display: true,
-            text: 'カスタムチャートタイトル'
+            text: '今週の睡眠時間',
+            fontSize: 30,
+            fontColor: '#122',
+            padding: 20,
+            fontFamily: 'Kiwi Maru',
         },
 
         maintainAspectRatio: false,
 
         scales: {
             y: {
-                beginAtZero: true
+                beginAtZero: true,
+              },
+
+            yAxes: [{
+              scaleLabel: {
+                display: true,
+                labelString: '睡眠時間',
+                fontSize: 25,
+                fontColor: '#122',
+                // fontStyle: 'middium',
+                fontFamily: 'Kiwi Maru',
+                // padding: 20,
+                // usePointStyle: True,
+                },
+              
+              ticks: {
+                suggestedMax: 40,
+                suggestedMin: 0,
+                stepSize: 10,
               }
+            }]
           }
       }
   });
