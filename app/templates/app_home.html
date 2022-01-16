@@ -477,6 +477,15 @@
     background-color: #fffe2e33;
   }
 
+  .title h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 80px;
+    width: 90%;
+    margin-left: 5%;
+    border: 2px solid;
+  }
+
 @media screen and (max-width: 770px) {
 
   .card.bg-light {
@@ -486,6 +495,11 @@
   .chart-container {
     max-height: 90% !important;
     max-width: 90% !important;
+  }
+
+  .title h2 {
+    margin-bottom: 60px;
+    font-size: 35px;
   }
   
 }
@@ -505,9 +519,18 @@
     max-width: 95% !important;
   }
 
+  .title h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+
 }
 
 </style>
+
+<div class="title">
+  <h2 class=" alert alert-warning">今週の運動日誌</h2>
+</div>
 
 <div class="card-container">
 {% for item in training %}
