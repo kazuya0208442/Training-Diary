@@ -3,7 +3,7 @@ from django.db.models import fields
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
 from .models import Staff, Target, TodoModel, Training, Week
 from django.urls import reverse_lazy
-
+from .change_link import change_link
 
 
 # Create your views here.
@@ -43,13 +43,18 @@ class Home(ListView):
 
    def get_context_data(self, **kwargs):
        s_time = Training.objects.values_list('sleeping_hours', flat=True)
-       s_time = [float(v) for v in s_time]    # DECIMAL prefix を外す方法
+       s_time_new = [float(v) for v in s_time]    # DECIMAL prefix を外す方法
+       link = Target.objects.values('long_target_link').get(pk=1)['long_target_link']
+       link_start = Target.objects.values('long_target_link_start').get(pk=1)['long_target_link_start']
+       new_link = change_link(link, link_start)
+
        context = super(Home, self).get_context_data(**kwargs)
        context.update({
            'training': Training.objects.all(),
            'week': Week.objects.all(),
            'staff': Staff.objects.all(),
-           's_time': s_time,
+           's_time_new': s_time_new,
+           'link_new_long': new_link,
        })
        return context
 
