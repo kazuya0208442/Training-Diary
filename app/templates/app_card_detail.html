@@ -99,6 +99,10 @@
     align-items: center;
   }
 
+  .detail {
+    background-color: lavenderblush;
+  }
+
   .purple {
     color: rgb(167, 62, 62);
   }
@@ -340,7 +344,7 @@
 
 </style>
 
-
+<div class="detail">
   <div class="header__inner">
     <div class="logo item">
       <a href="{% url 'home' %}" class="link"></a>
@@ -355,6 +359,7 @@
       </ul>
     </nav>
   </div>
+</div>
 
 {% endblock %} 
 
@@ -375,16 +380,14 @@
   }
 
   .card.bg-light {
-    height: 400px;
-    flex-basis: 30%;
+    min-height: 400px;
+    flex-basis: 100%;
     margin-bottom: 100px;
+    margin-top: 120px;
     background-color: #fcfff080 !important;
   }
 
   .card-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
   }
@@ -399,15 +402,15 @@
     background-color: #fffe2e33;
   }
 
-@media screen and (max-width: 770px) {
+/* @media screen and (max-width: 770px) {
 
   .card.bg-light {
     flex-basis: 48%;
   }
   
-}
+} */
 
-@media screen and (max-width: 570px) {
+/* @media screen and (max-width: 570px) {
 
   .card.bg-light {
     flex-basis: 100%;
@@ -417,12 +420,12 @@
     justify-content: center;
 }
 
-}
+} */
 
 </style>
 
 <div class="card-container">
-  <div class="card bg-light mb-5 mb-5" style="max-width: 25rem;">
+  <div class="card bg-light mb-5 mb-5 text-center">
     <div class="card-header main">Header</div>
     <div class="card-body">
       <h5 class="card-title">{{object.dairy_target}}</h5>
