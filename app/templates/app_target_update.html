@@ -1,15 +1,84 @@
 {% extends 'base.html' %} 
 
 {% block content %}
-    <form action='' method='POST'>{% csrf_token %}
-    {{ form.long_target }}
-    {{ form.long_target_summary }}
-    {{ form.long_target_date }}
-    {{ form.middle_target }}
-    {{ form.middle_target_summary }}
-    {{ form.short_target }}
-    {{ form.short_target_summary }}
-    <input type='submit' value='update'>
-    </form>
+    <style>
+      .form_container {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 70px;
+      }
+    </style>
+
+
+
+    <div class="form_container">
+      <form action='' method='POST' onsubmit="return false;" >{% csrf_token %}
+
+      <!-- <input type="text" name="long_target" value="あああ" maxlength="100" required="" id="id_long_target" class="form-control"> -->
+      <!-- <textarea name="long_target_summary" cols="40" rows="10" required="" id="id_long_target_summary" class="form-control">あああaaaaassss</textarea> -->
+      
+      <!-- <label for="inputPassword5">Password</label>
+      <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+      <small id="passwordHelpBlock" class="form-text text-muted">
+          Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+      </small>
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div> -->
+
+      <div class="form-group">
+        <label for="id_long_target">長期目標</label>
+        {{ form.long_target }}
+        <small class="text-muted">
+          具体的な数値などを書きましょう
+        </small>
+      </div>
+      {{ form.long_target_summary }}
+      {{ form.long_target_date }}
+      {{ form.long_target_link }}
+      {{ form.long_target_link_start }}
+      {{ form.middle_target }}
+      {{ form.middle_target_summary }}
+      {{ form.middle_target_link }}
+      {{ form.short_target }}
+      {{ form.short_target_summary }}
+      {{ form.short_target_link }}
+      <input type='button' value='update' onclick="submit();">
+      </form>
+    </div>
     <a href="{{request.META.HTTP_REFERER}}" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">戻る</a>
+
+    <label for="inputPassword5">Password</label>
+    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+    <small id="passwordHelpBlock" class="form-text text-muted">
+        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+    </small>
+
+    <form class="form-inline">
+        <div class="form-group">
+          <label for="inputPassword6">Password</label>
+          <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+          <small id="passwordHelpInline" class="text-muted">
+            Must be 8-20 characters long.
+          </small>
+        </div>
+    </form>
+
+
+    <script>
+
+      // const div = document.getElementById('target');
+      // div.classList.add('green','blue');
+      // fruit.forEach(element => console.log(element));
+
+      const input = document.querySelectorAll('input');
+      const textarea = document.querySelectorAll('textarea');
+
+      input.forEach(el => el.classList.add("form-control"));
+      textarea.forEach(el => el.classList.add("form-control"));
+
+    </script>
+
 {% endblock content %}
