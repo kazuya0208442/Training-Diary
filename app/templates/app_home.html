@@ -470,7 +470,8 @@
   .card-container::after {
     display: block;
     content:"";
-    width: 300px;
+    width: 50%;
+    /* width: 300px; */
   }
 
   .card-header.main {
@@ -532,17 +533,19 @@
   <h2 class=" alert alert-warning">今週の運動日誌</h2>
 </div>
 
-<div class="card-container">
-{% for item in training %}
-<div class="card bg-light mb-5 mb-5 text-center" style="max-width: 25rem;">
-    <a href="{% url 'c_detail' item.pk %}" class="link"></a>
-    <div class="card-header main">Header</div>
-    <div class="card-body">
-      <h5 class="card-title">{{item.dairy_target}}</h5>
-      <p class="card-text main">{{item.dairy_target_summary}}</p>
+<div class="card-deck">
+  <div class="card-container">
+  {% for item in training %}
+  <div class="card bg-light mb-5 mb-5 text-center">
+      <a href="{% url 'c_detail' item.pk %}" class="link"></a>
+      <div class="card-header main">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">{{item.dairy_target}}</h5>
+        <p class="card-text main">{{item.dairy_target_summary}}</p>
+      </div>
     </div>
+  {% endfor %}
   </div>
-{% endfor %}
 </div>
 
 

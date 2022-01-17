@@ -437,7 +437,10 @@
       <p class="card-text main">{{object.body_temperature}}</p>
       <p class="card-text main">{{object.body_weight}}</p>
       <p class="card-text main">{{object.sleeping_hours}}</p>
-      <a href="{% url 'c_update' object.pk %}" class="btn btn-info" tabindex="-1" role="button" aria-disabled="true">編集画面へ</a>
+      <a href="{% url 'c_update' object.pk %}" class="btn btn-info mb-3" tabindex="-1" role="button" aria-disabled="true">編集画面へ</a>
+      <div>
+        <a href="{{request.META.HTTP_REFERER}}" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">戻る</a>
+      </div>
     </div>
   </div>
 </div>
