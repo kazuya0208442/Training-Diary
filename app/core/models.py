@@ -34,6 +34,8 @@ class Training(models.Model):
     body_weight = models.DecimalField(default=0, help_text='体重', decimal_places=1, max_digits=4)
     sleeping_hours = models.DecimalField(default=0, help_text='睡眠時間', decimal_places=1, max_digits=4)
 
+    date = models.DateField(default=timezone.datetime.now, help_text='日付')
+
     def __str__(self):
         return self.dairy_target
 
@@ -42,12 +44,15 @@ class Target(models.Model):
     long_target = models.CharField(max_length=100, help_text='長期目標')
     long_target_summary = models.TextField(help_text='長期目標の詳細について')
     long_target_date = models.DateField(default=timezone.datetime.now, help_text='長期目標の期日')
+    long_target_link = models.CharField(max_length=255, help_text='YouTube の埋め込みリンク', blank=True, null=True)
 
     middle_target = models.CharField(max_length=100, help_text='中期目標')
     middle_target_summary = models.TextField(help_text='中期目標の詳細について')
+    middle_target_link = models.CharField(max_length=255, help_text='YouTube の埋め込みリンク', blank=True, null=True)
 
     short_target = models.CharField(max_length=100, help_text='短期目標')
     short_target_summary = models.TextField(help_text='短期目標の詳細について')
+    short_target_link = models.CharField(max_length=255, help_text='YouTube の埋め込みリンク', blank=True, null=True)
 
     def __str__(self):
         return self.long_target
