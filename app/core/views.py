@@ -82,7 +82,7 @@ class Staff_detail(DetailView):
 class TargetUpdate(UpdateView):
     template_name = 'app_target_update.html'
     model = Target
-    fields = ('long_target', 'long_target_summary', 'long_target_date', 'middle_target', 'middle_target_summary', 'short_target', 'short_target_summary')
+    fields = ('long_target', 'long_target_summary', 'long_target_date', 'long_target_link', 'long_target_link_start', 'middle_target', 'middle_target_summary', 'middle_target_link', 'short_target', 'short_target_summary', 'short_target_link')
     success_url = reverse_lazy('home')      # 静的ページにしか使えない。
     # def get_success_url(self):
     #     return reverse_lazy('t_detail', kwargs={'pk': self.kwargs['pk']})
