@@ -477,6 +477,7 @@
 
   .card-header.main {
     background-color: #fffe2e33;
+    /* background-color: #fffa5c85; */
   }
 
   .title h2 {
@@ -485,7 +486,9 @@
     margin-bottom: 80px;
     /* width: 90%; */
     /* margin-left: 5%; */
-    border: 2px solid;
+    border: 1px solid;
+    background-color: #fffa5c85;
+
   }
 
   .title {
@@ -496,6 +499,10 @@
 
   .list-group-item {
     background-color: #fcfff080 !important;
+  }
+
+  .graph {
+    margin-top: 55px;
   }
 
 @media screen and (max-width: 770px) {
@@ -589,18 +596,218 @@
     <p class="card-text">{{item.summary}}</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
     <div class="chart-container" style="position: relative; max-width: 80%; max-height: 80%; margin: 0 auto;">
-      <canvas id="myChart" width="400" height="400"></canvas>
+      <div class="graph">
+        <canvas id="myChart_1" width="400" height="400"></canvas>
+      </div>
+      <div class="graph">
+        <canvas id="myChart_2" width="400" height="400"></canvas>
+      </div>
+      <div class="graph">
+      <canvas id="myChart_3" width="400" height="400"></canvas>
+      </div>
     </div>
   </div>
 </div>
 
+
+
+
 <script>
-  const ctx = document.getElementById('myChart').getContext('2d');
-  const myChart = new Chart(ctx, {
+
+  const ctx_1 = document.getElementById('myChart_1').getContext('2d');
+  const myChart_1 = new Chart(ctx_1, {
       type: 'line',
       data: {
           // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-          labels: ['Red', 'Blue',],
+          labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          datasets: [{
+              label: '',
+              pointRadius: 5,
+              pointBackgroundColor: 'rgba(255, 99, 132, 1)',
+              // data: [12, 19, 3, 5, 2, 3],
+              data: {{ t_time_new }},
+              backgroundColor: [
+                  'rgba(0, 0, 0, 0)',
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  // 'rgba(54, 162, 235, 1)',
+                  // 'rgba(255, 206, 86, 1)',
+                  // 'rgba(75, 192, 192, 1)',
+                  // 'rgba(153, 102, 255, 1)',
+                  // 'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 3
+          }]
+      },
+      options: {
+
+        legend: {
+          display: false
+        },
+
+        title: {
+            responsive: true,
+            display: true,
+            text: '今週の運動時間',
+            fontSize: 34,
+            fontColor: '#122',
+            padding: 28,
+            fontFamily: 'Kiwi Maru',
+            fontStyle: 'normal',
+        },
+
+        maintainAspectRatio: false,
+
+        scales: {
+            y: {
+                beginAtZero: true,
+              },
+
+            yAxes: [{
+              scaleLabel: {
+                display: true,
+                labelString: '運動時間 (h)',
+                fontSize: 25,
+                fontColor: '#122',
+                // fontStyle: 'thin',
+                fontFamily: 'Kiwi Maru',
+                // padding: 20,
+                // usePointStyle: True,
+                },
+              
+              ticks: {
+                suggestedMax: 40,
+                suggestedMin: 0,
+                stepSize: 10,
+                fontSize: 23,
+              }
+            }],
+
+            xAxes: [{
+              // scaleLabel: {
+                // display: true,
+                // labelString: '睡眠時間',
+                // fontSize: 25,
+                // fontColor: '#122',
+                // fontStyle: 'middium',
+                // fontFamily: 'Kiwi Maru',
+                // padding: 20,
+                // usePointStyle: True,
+                // },
+              
+              ticks: {
+                // suggestedMax: 40,
+                // suggestedMin: 0,
+                // stepSize: 10,
+                fontSize: 23,
+              }
+            }]
+          }
+      }
+  });
+
+
+  const ctx_2 = document.getElementById('myChart_2').getContext('2d');
+  const myChart_2 = new Chart(ctx_2, {
+      type: 'line',
+      data: {
+          // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          datasets: [{
+              label: '',
+              pointRadius: 5,
+              pointBackgroundColor: 'rgba(153, 102, 255, 1)',
+              // data: [12, 19, 3, 5, 2, 3],
+              data: {{ stability_time_new }},
+              backgroundColor: [
+                  'rgba(0, 0, 0, 0)',
+              ],
+              borderColor: [
+                  // 'rgba(255, 99, 132, 1)',
+                  // 'rgba(54, 162, 235, 1)',
+                  // 'rgba(255, 206, 86, 1)',
+                  // 'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  // 'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 3
+          }]
+      },
+      options: {
+
+        legend: {
+          display: false
+        },
+
+        title: {
+            responsive: true,
+            display: true,
+            text: '今週の体幹トレーニング',
+            fontSize: 34,
+            fontColor: '#122',
+            padding: 28,
+            fontFamily: 'Kiwi Maru',
+            fontStyle: 'normal',
+        },
+
+        maintainAspectRatio: false,
+
+        scales: {
+            y: {
+                beginAtZero: true,
+              },
+
+            yAxes: [{
+              scaleLabel: {
+                display: true,
+                labelString: '体幹トレーニング (min)',
+                fontSize: 25,
+                fontColor: '#122',
+                // fontStyle: 'thin',
+                fontFamily: 'Kiwi Maru',
+                // padding: 20,
+                // usePointStyle: True,
+                },
+              
+              ticks: {
+                suggestedMax: 40,
+                suggestedMin: 0,
+                stepSize: 10,
+                fontSize: 23,
+              }
+            }],
+
+            xAxes: [{
+              // scaleLabel: {
+                // display: true,
+                // labelString: '睡眠時間',
+                // fontSize: 25,
+                // fontColor: '#122',
+                // fontStyle: 'middium',
+                // fontFamily: 'Kiwi Maru',
+                // padding: 20,
+                // usePointStyle: True,
+                // },
+              
+              ticks: {
+                // suggestedMax: 40,
+                // suggestedMin: 0,
+                // stepSize: 10,
+                fontSize: 23,
+              }
+            }]
+          }
+      }
+  });
+
+
+  const ctx_3 = document.getElementById('myChart_3').getContext('2d');
+  const myChart_3 = new Chart(ctx_3, {
+      type: 'line',
+      data: {
+          // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
           datasets: [{
               label: '',
               pointRadius: 5,
@@ -687,6 +894,7 @@
           }
       }
   });
+  
 </script>
 {% endfor %}
 
