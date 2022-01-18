@@ -42,8 +42,17 @@ class Home(ListView):
    
 
    def get_context_data(self, **kwargs):
+
+       def _to_float(x_list):
+           return [float(v) for v in x_list]
+
+       t_time = Training.objects.values_list('training_time', flat=True)
+       t_time_new = _to_float(t_time)
+       stability_time = Training.objects.values_list('stability_time', flat=True)
+       stability_time_new = _to_float(stability_time)
        s_time = Training.objects.values_list('sleeping_hours', flat=True)
-       s_time_new = [float(v) for v in s_time]    # DECIMAL prefix を外す方法
+       s_time_new = _to_float(s_time)    # DECIMAL prefix を外す方法
+
        link = Target.objects.values('long_target_link').get(pk=1)['long_target_link']
        link_start = Target.objects.values('long_target_link_start').get(pk=1)['long_target_link_start']
        new_link = change_link(link, link_start)
@@ -53,6 +62,8 @@ class Home(ListView):
            'training': Training.objects.all(),
            'week': Week.objects.all(),
            'staff': Staff.objects.all(),
+           't_time_new': t_time_new,
+           'stability_time_new': stability_time_new,
            's_time_new': s_time_new,
            'link_new_long': new_link,
        })
