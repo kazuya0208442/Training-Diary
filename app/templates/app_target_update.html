@@ -12,109 +12,109 @@
         height: 10vh !important;
       }
 
+      .update {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 45px;
+      }
+
+      label {
+        color: darkred;
+      }
+
     </style>
 
 
 
     <div class="form_container">
-      <form action='' method='POST' onsubmit="return false;" >{% csrf_token %}
+        <form action='' method='POST' onsubmit="return false;" >{% csrf_token %}
 
-      <!-- <input type="text" name="long_target" value="あああ" maxlength="100" required="" id="id_long_target" class="form-control"> -->
-      <!-- <textarea name="long_target_summary" cols="40" rows="10" required="" id="id_long_target_summary" class="form-control">あああaaaaassss</textarea> -->
-      
-      <!-- <label for="inputPassword5">Password</label>
-      <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-      <small id="passwordHelpBlock" class="form-text text-muted">
-          Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-      </small>
-
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div> -->
-
-      <div class="form-group">
-        <label for="id_long_target">長期目標</label>
-        {{ form.long_target }}
-        <small class="text-muted form-text">
-          具体的な数値などを書きましょう
-        </small>
-      </div>
-      <div class="form-group">
-        <label for="id_long_target">長期目標のためにできること</label>
-        {{ form.long_target_summary }}
-        <small class="text-muted">
-          具体的に書きましょう
-        </small>
-      </div>
-      <div class="form-group">
-        <label for="id_long_target">長期目標の期日</label>
-        {{ form.long_target_date }}
-        <small class="text-muted">
-          大会の日程などを書きましょう
-        </small>
-      </div>
-      <div class="form-group">
-        <label for="id_long_target">長期目標のための参考動画</label>
-        {{ form.long_target_link }}
-        <small class="text-muted">
-          こうなりたいと思うプレーの動画を見つけてきましょう
-        </small>
-      </div>
-      <div class="form-group">
-        <label for="id_long_target">参考動画の開始時間</label>
-        {{ form.long_target_link_start }}
-        <small class="text-muted">
-          見たい動画の秒数を入力すると、その時間から自動再生されます
-        </small>
-      </div>
-      <div class="form-group">
-        <label for="id_long_target">中期目標</label>
-        {{ form.middle_target }}
-        <small class="text-muted">
-          具体的な数値などを書きましょう
-        </small>
-      </div>
-      <div class="form-group">
-        <label for="id_long_target">中期目標のためにできること</label>
-        {{ form.middle_target_summary }}
-        <small class="text-muted">
-          具体的に書きましょう
-        </small>
-      </div>
-      <div class="form-group">
-        <label for="id_long_target">中期目標のための参考動画</label>
-        {{ form.middle_target_link }}
-        <small class="text-muted">
-          こうなりたいと思うプレーの動画を見つけてきましょう
-        </small>
-      </div>
-      <div class="form-group">
-        <label for="id_long_target">短期目標</label>
-        {{ form.short_target }}
-        <small class="text-muted">
-          具体的な数値などを書きましょう
-        </small>
-      </div>
-      <div class="form-group">
-        <label for="id_long_target">短期目標のためにできること</label>
-        {{ form.short_target_summary }}
-        <small class="text-muted">
-          具体的に書きましょう
-        </small>
-      </div>
-      <div class="form-group">
-        <label for="id_long_target">短期目標のための参考動画</label>
-        {{ form.short_target_link }}
-        <small class="text-muted">
-          こうなりたいと思うプレーの動画を見つけてきましょう
-        </small>
-      </div>
-      
-      <input type='button' value='update' onclick="submit();">
+        <div class="form-group">
+          <label for="id_long_target">長期目標</label>
+          {{ form.long_target }}
+          <small class="text-muted form-text mb-5">
+            具体的な数値などを書きましょう
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="id_long_target">長期目標のためにできること</label>
+          {{ form.long_target_summary }}
+          <small class="text-muted mb-5 form-text">
+            具体的に書きましょう
+          </small>
+        </div>
+        <div class="form-group" style="width: 15vh;">
+          <label for="id_long_target" style="width: 50vh;">長期目標の期日</label>
+          {{ form.long_target_date }}
+          <small class="text-muted mb-5 form-text" style="width: 50vh;">
+            大会の日程などを書きましょう
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="id_long_target">長期目標のための参考動画</label>
+          {{ form.long_target_link }}
+          <small class="text-muted mb-5 form-text">
+            こうなりたいと思うプレーの動画を見つけてきましょう
+          </small>
+        </div>
+        <div class="form-group" style="margin-bottom: 130px; width: 10vh;">
+          <label for="id_long_target" style="width: 50vh;">参考動画の開始時間</label>
+          {{ form.long_target_link_start }}
+          <small class="text-muted mb-5 form-text" style="width: 50vh;">
+            見たい動画の秒数を入力すると、その時間から自動再生されます
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="id_long_target">中期目標</label>
+          {{ form.middle_target }}
+          <small class="text-muted mb-5 form-text">
+            具体的な数値などを書きましょう
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="id_long_target">中期目標のためにできること</label>
+          {{ form.middle_target_summary }}
+          <small class="text-muted mb-5 form-text">
+            具体的に書きましょう
+          </small>
+        </div>
+        <div class="form-group" style="margin-bottom: 130px;">
+          <label for="id_long_target">中期目標のための参考動画</label>
+          {{ form.middle_target_link }}
+          <small class="text-muted mb-5 form-text">
+            こうなりたいと思うプレーの動画を見つけてきましょう
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="id_long_target">短期目標</label>
+          {{ form.short_target }}
+          <small class="text-muted mb-5 form-text">
+            具体的な数値などを書きましょう
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="id_long_target">短期目標のためにできること</label>
+          {{ form.short_target_summary }}
+          <small class="text-muted mb-5 form-text">
+            具体的に書きましょう
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="id_long_target">短期目標のための参考動画</label>
+          {{ form.short_target_link }}
+          <small class="text-muted mb-5 form-text">
+            こうなりたいと思うプレーの動画を見つけてきましょう
+          </small>
+        </div>
+        <div class="update">
+          <input type='button' value='更新する' class="btn btn-outline-success" onclick="submit();" style="width: 30vh;">
+        </div>
+        <div class="update">
+          <a href="{{request.META.HTTP_REFERER}}" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">戻る</a>
+        </div>
       </form>
     </div>
-    <a href="{{request.META.HTTP_REFERER}}" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">戻る</a>
+    
 
 
     <script>
