@@ -436,7 +436,7 @@
   .card-text.main {
   display: -webkit-box;
   overflow: hidden;
-  -webkit-line-clamp: 10;
+  -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   }
 
@@ -494,6 +494,10 @@
     width: 90%;
   }
 
+  .list-group-item {
+    background-color: #fcfff080 !important;
+  }
+
 @media screen and (max-width: 770px) {
 
   .card.bg-light {
@@ -545,11 +549,17 @@
   {% for item in training %}
   <div class="card bg-light mb-5 mb-5 text-center">
       <a href="{% url 'c_detail' item.pk %}" class="link"></a>
-      <div class="card-header main">Header</div>
+      <div class="card-header main">{{item.date |date:"n" }}月{{item.date |date:"j" }}日({{item.date |date:"D" }})</div>
       <div class="card-body">
         <h5 class="card-title">{{item.dairy_target}}</h5>
         <p class="card-text main">{{item.dairy_target_summary}}</p>
       </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">運動時間の合計:&nbsp;{{item.training_time}}&nbsp;時間</li>
+        <li class="list-group-item">体幹トレーニング:&nbsp;{{item.stability_time}}&nbsp;分</li>
+        <li class="list-group-item">ストレッチ:&nbsp;{{item.stretch_time}}&nbsp;分</li>
+        <li class="list-group-item">睡眠時間:{{item.sleeping_hours}}&nbsp;時間</li>
+      </ul>
     </div>
   {% endfor %}
   </div>

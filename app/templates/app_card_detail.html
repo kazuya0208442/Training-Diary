@@ -382,7 +382,7 @@
   .card.bg-light {
     min-height: 400px;
     flex-basis: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     margin-top: 120px;
     background-color: #fcfff080 !important;
   }
@@ -401,6 +401,16 @@
   .card-header.main {
     background-color: #fffe2e33;
   }
+
+  .list-group-item {
+    background-color: #fcfff080 !important;
+  }
+
+  .update {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
 
 /* @media screen and (max-width: 770px) {
 
@@ -426,23 +436,26 @@
 
 <div class="card-container">
   <div class="card bg-light mb-5 mb-5 text-center">
-    <div class="card-header main">Header</div>
+    <div class="card-header main">{{object.date |date:"n" }}月{{object.date |date:"j" }}日({{object.date |date:"D" }})</div>
     <div class="card-body">
       <h5 class="card-title">{{object.dairy_target}}</h5>
       <p class="card-text main">{{object.dairy_target_summary}}</p>
-      <p class="card-text main">{{object.dairy_target_menu}}</p>
-      <p class="card-text main">{{object.training_time}}</p>
-      <p class="card-text main">{{object.stability_time}}</p>
-      <p class="card-text main">{{object.stretch_time}}</p>
-      <p class="card-text main">{{object.body_temperature}}</p>
-      <p class="card-text main">{{object.body_weight}}</p>
-      <p class="card-text main">{{object.sleeping_hours}}</p>
-      <a href="{% url 'c_update' object.pk %}" class="btn btn-info mb-3" tabindex="-1" role="button" aria-disabled="true">編集画面へ</a>
-      <div>
-        <a href="{{request.META.HTTP_REFERER}}" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">戻る</a>
-      </div>
     </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" style="font-size: 20px;">練習メニュー<p class="card-text main" style="font-size: 1rem; margin-top: 5px;">{{object.dairy_target_menu}}</p></li>
+      <li class="list-group-item">運動時間の合計:&nbsp;{{object.training_time}}&nbsp;時間</li>
+      <li class="list-group-item">体幹トレーニング:&nbsp;{{object.stability_time}}&nbsp;分</li>
+      <li class="list-group-item">ストレッチ:&nbsp;{{object.stretch_time}}&nbsp;分</li>
+      <li class="list-group-item">睡眠時間:{{object.sleeping_hours}}&nbsp;時間</li>
+    </ul>
   </div>
+</div>
+
+<div class="update">
+  <a href="{% url 'c_update' object.pk %}" class="btn btn-outline-success" tabindex="-1" role="button" aria-disabled="true">編集画面へ</a>
+</div>
+<div class="update">
+  <a href="{{request.META.HTTP_REFERER}}" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">戻る</a>
 </div>
 
 {% endblock content %}
