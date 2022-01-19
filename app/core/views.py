@@ -118,3 +118,10 @@ class StaffUpdate(UpdateView):
     model = Staff
     fields = ('title', 'staff')
     success_url = reverse_lazy('home')      # 静的ページにしか使えない。
+
+
+class WeekUpdate(UpdateView):
+    template_name = 'app_week_update.html'
+    model = Week
+    fields = ('title', 'summary')
+    success_url = reverse_lazy('home')      # 静的ページにしか使えない。

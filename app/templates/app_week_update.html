@@ -1,0 +1,72 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+    <style>
+      .form_container {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 70px;
+      }
+
+      textarea {
+        height: 50vh !important;
+      }
+
+      .update {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 45px;
+      }
+
+      label {
+        color: darkred;
+      }
+
+    </style>
+
+
+
+    <div class="form_container">
+        <form action='' method='POST' onsubmit="return false;" >{% csrf_token %}
+
+        <div class="form-group">
+          <label for="id_long_target">タイトル</label>
+          {{ form.title }}
+          <small class="text-muted form-text mb-5">
+            タイトルを書きましょう
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="id_long_target">今週の振り返り</label>
+          {{ form.summary }}
+          <small class="text-muted mb-5 form-text">
+            今週の自分の行動を振り返ってください
+          </small>
+        </div>
+        
+        <div class="update">
+          <input type='button' value='更新する' class="btn btn-outline-success" onclick="submit();" style="width: 30vh;">
+        </div>
+        <div class="update">
+          <a href="{{request.META.HTTP_REFERER}}" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">戻る</a>
+        </div>
+      </form>
+    </div>
+    
+
+
+    <script>
+
+      // const div = document.getElementById('target');
+      // div.classList.add('green','blue');
+      // fruit.forEach(element => console.log(element));
+
+      const input = document.querySelectorAll('input');
+      const textarea = document.querySelectorAll('textarea');
+
+      input.forEach(el => el.classList.add("form-control"));
+      textarea.forEach(el => el.classList.add("form-control"));
+
+    </script>
+
+{% endblock content %}
