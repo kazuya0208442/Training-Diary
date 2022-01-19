@@ -1,9 +1,0 @@
-{% extends 'base.html' %} 
-
-{% block content %}
-    <form action='' method='POST'>{% csrf_token %}
-    {{ form.as_p }}
-    <input style="margin: 30px 50vh;" type='submit' value='create'>
-    </form>
-    <style>p {margin: 50vh; margin-top: 40px;}</style>
-{% endblock content %}
