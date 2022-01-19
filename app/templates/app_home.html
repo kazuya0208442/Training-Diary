@@ -144,7 +144,8 @@
     max-width: 840px;
     max-height: 472.5px;
     margin: 0 auto;
-    margin-top: 25px;
+    /* padding-top: 70px; */
+    margin-top: 9px;
 }
   .wrapper:before {
     content:"";
@@ -395,7 +396,7 @@
     </div>
   </div>
   <div class="card-footer">
-    期限:&nbsp;{{ item.long_target_date }}まで残り<span class="purple">62</span>日
+    大会日程:&nbsp;{{item.long_target_date |date:"n" }}月{{item.long_target_date |date:"j" }}日({{item.long_target_date |date:"D" }})まで残り<span class="purple">{{ time_delta }}</span>日
   </div>
 </div>
 
@@ -412,7 +413,8 @@
     </div>
   </div>
   <div class="card-footer">
-    期限:&nbsp;2月25日まで残り<span class="purple">32</span>日
+    <!-- 期限:&nbsp;2月25日まで残り<span class="purple">32</span>日 -->
+    気合い入れていこう!!
   </div>
 </div>
 
@@ -425,7 +427,7 @@
     <h4 class="card-title">{{ item.short_target }}</h4>
     <p class="card-text text-left">{{ item.middle_target_summary }}</p>
   </div>
-  <div class="card-footer text-muted">
+  <div class="card-footer">
     頑張っていきましょう!!
   </div>
 </div>
