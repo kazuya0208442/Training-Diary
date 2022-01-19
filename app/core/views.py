@@ -4,6 +4,10 @@ from django.views.generic import ListView, DetailView, CreateView, DeleteView, U
 from .models import Staff, Target, TodoModel, Training, Week
 from django.urls import reverse_lazy
 from .change_link import change_link
+from .day_computed import day_computed
+import datetime
+
+
 
 
 # Create your views here.
@@ -40,11 +44,13 @@ class Home(ListView):
    context_object_name = 'target'
    model = Target
    
-
    def get_context_data(self, **kwargs):
 
        def _to_float(x_list):
            return [float(v) for v in x_list]
+       
+       target_date = Target.objects.values('long_target_date').get(pk=1)['long_target_date']
+       time_delta = day_computed(target_date)
 
        t_time = Training.objects.values_list('training_time', flat=True)
        t_time_new = _to_float(t_time)
@@ -66,6 +72,7 @@ class Home(ListView):
            'stability_time_new': stability_time_new,
            's_time_new': s_time_new,
            'link_new_long': new_link,
+           'time_delta': time_delta,
        })
        return context
 
