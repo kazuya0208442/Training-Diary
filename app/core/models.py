@@ -27,12 +27,12 @@ class Training(models.Model):
     dairy_target_menu = models.TextField(help_text='トレーニングメニュー')
     dairy_target_summary = models.TextField(help_text='意識したこと・達成したこと')
     
-    training_time = models.DecimalField(default=0, help_text='運動の合計時間', decimal_places=1, max_digits=4)
-    stability_time = models.DecimalField(default=0, help_text='体幹トレーニングの合計時間', decimal_places=1, max_digits=4)
-    stretch_time = models.DecimalField(default=0, help_text='ストレッチの合計時間', decimal_places=1, max_digits=4)
+    training_time = models.DecimalField(default=0, help_text='運動の合計時間(hour)', decimal_places=1, max_digits=4)
+    stability_time = models.IntegerField(default=0, help_text='体幹トレーニングの合計時間(min)')
+    stretch_time = models.IntegerField(default=0, help_text='ストレッチの合計時間(min)')
     body_temperature = models.DecimalField(default=0, help_text='体温', decimal_places=1, max_digits=4)
     body_weight = models.DecimalField(default=0, help_text='体重', decimal_places=1, max_digits=4)
-    sleeping_hours = models.DecimalField(default=0, help_text='睡眠時間', decimal_places=1, max_digits=4)
+    sleeping_hours = models.DecimalField(default=0, help_text='睡眠時間(hour)', decimal_places=1, max_digits=4)
 
     date = models.DateField(default=timezone.datetime.now, help_text='日付')
 
