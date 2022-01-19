@@ -11,9 +11,6 @@ jobs:
       matrix:
         python-version: [3.9]
     
-    env:
-      POSTGRES_HOST: postgres
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
