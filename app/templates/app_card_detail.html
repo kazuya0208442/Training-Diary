@@ -455,7 +455,7 @@
   <a href="{% url 'c_update' object.pk %}" class="btn btn-outline-success" tabindex="-1" role="button" aria-disabled="true">編集画面へ</a>
 </div>
 <div class="update">
-  <a href="{{request.META.HTTP_REFERER}}" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">戻る</a>
+  <a href="{% url 'home' %}" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">戻る</a>
 </div>
 
 {% endblock content %}

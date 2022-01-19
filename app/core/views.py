@@ -107,7 +107,7 @@ class TargetUpdate(UpdateView):
 class CardUpdate(UpdateView):
     template_name = 'app_card_update.html'
     model = Training
-    fields = ('dairy_target', 'dairy_target_menu', 'dairy_target_summary', 'training_time', 'stability_time', 'stretch_time', 'body_temperature', 'body_weight', 'sleeping_hours')
+    fields = ('dairy_target', 'dairy_target_menu', 'dairy_target_summary', 'training_time', 'stability_time', 'stretch_time', 'body_temperature', 'body_weight', 'sleeping_hours', 'date')
     # success_url = reverse_lazy('t_detail')      # 静的ページにしか使えない。
     def get_success_url(self):
         return reverse_lazy('c_detail', kwargs={'pk': self.kwargs['pk']})
