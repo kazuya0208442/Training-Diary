@@ -111,3 +111,10 @@ class CardUpdate(UpdateView):
     # success_url = reverse_lazy('t_detail')      # 静的ページにしか使えない。
     def get_success_url(self):
         return reverse_lazy('c_detail', kwargs={'pk': self.kwargs['pk']})
+
+
+class StaffUpdate(UpdateView):
+    template_name = 'app_staff_update.html'
+    model = Staff
+    fields = ('title', 'staff')
+    success_url = reverse_lazy('home')      # 静的ページにしか使えない。
