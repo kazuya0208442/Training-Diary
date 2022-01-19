@@ -1,16 +1,127 @@
 {% extends 'base.html' %} 
 
 {% block content %}
-    <form action='' method='POST'>{% csrf_token %}
-    {{ form.dairy_target }}
-    {{ form.dairy_target_menu }}
-    {{ form.dairy_target_summary }}
-    {{ form.training_time }}
-    {{ form.stability_time }}
-    {{ form.stretch_time }}
-    {{ form.body_temperature }}
-    {{ form.body_weight }}
-    {{ form.sleeping_hours }}
-    <input type='submit' value='update'>
-    </form>
+    <style>
+      .form_container {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 70px;
+      }
+
+      textarea {
+        height: 40vh !important;
+      }
+
+      .update {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 45px;
+      }
+
+      label {
+        color: darkred;
+      }
+
+    </style>
+
+
+
+    <div class="form_container">
+        <form action='' method='POST' onsubmit="return false;" >{% csrf_token %}
+
+        <div class="form-group">
+          <label for="id_long_target">タイトル</label>
+          {{ form.dairy_target }}
+          <small class="text-muted form-text mb-5">
+            通常練習、練習試合、公式戦、プログラム、のように具体的な内容を書いてください
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="id_long_target">トレーニング内容</label>
+          {{ form.dairy_target_menu }}
+          <small class="text-muted mb-5 form-text">
+            具体的に書きましょう
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="id_long_target" style="width: 50vh;">意識したこと・達成したこと</label>
+          {{ form.dairy_target_summary }}
+          <small class="text-muted mb-5 form-text" style="width: 50vh;">
+            具体的に書きましょう
+          </small>
+        </div>
+        <div class="form-group" style="width: 10vh;">
+          <label for="id_long_target" style="width: 50vh;">運動の合計時間(hour)</label>
+          {{ form.training_time }}
+          <small class="text-muted mb-5 form-text" style="width: 50vh;">
+            運動の合計時間を書きましょう
+          </small>
+        </div>
+        <div class="form-group" style="width: 10vh;">
+          <label for="id_long_target" style="width: 50vh;">体幹トレーニングの時間(min)</label>
+          {{ form.stability_time }}
+          <small class="text-muted mb-5 form-text" style="width: 50vh;">
+            体幹トレーニングの時間を書きましょう
+          </small>
+        </div>
+        <div class="form-group" style="width: 10vh;">
+          <label for="id_long_target" style="width: 50vh;">ストレッチの時間(min)</label>
+          {{ form.stretch_time }}
+          <small class="text-muted mb-5 form-text" style="width: 50vh;">
+            ストレッチの時間(min)を書きましょう
+          </small>
+        </div>
+        <div class="form-group" style="width: 10vh;">
+          <label for="id_long_target" style="width: 50vh;">体温(度)</label>
+          {{ form.body_temperature }}
+          <small class="text-muted mb-5 form-text" style="width: 50vh;">
+            体温を書きましょう
+          </small>
+        </div>
+        <div class="form-group" style="width: 10vh;">
+          <label for="id_long_target" style="width: 50vh;">体重(kg)</label>
+          {{ form.body_weight }}
+          <small class="text-muted mb-5 form-text" style="width: 50vh;">
+            体重を書きましょう
+          </small>
+        </div>
+        <div class="form-group" style="width: 10vh;">
+          <label for="id_long_target" style="width: 50vh;">睡眠時間(hour)</label>
+          {{ form.sleeping_hours }}
+          <small class="text-muted mb-5 form-text" style="width: 50vh;">
+            睡眠時間に書きましょう
+          </small>
+        </div>
+        <div class="form-group" style="width: 20vh;">
+          <label for="id_long_target" style="width: 50vh;">日付</label>
+          {{ form.date }}
+          <small class="text-muted mb-5 form-text" style="width: 50vh;">
+            日付を書きましょう.フォーマットは"年-月-日"
+          </small>
+        </div>
+        <div class="update">
+          <input type='button' value='更新する' class="btn btn-outline-success" onclick="submit();" style="width: 30vh;">
+        </div>
+        <div class="update">
+          <a href="{{request.META.HTTP_REFERER}}" class="btn btn-outline-primary" tabindex="-1" role="button" aria-disabled="true">戻る</a>
+        </div>
+      </form>
+    </div>
+    
+
+
+    <script>
+
+      // const div = document.getElementById('target');
+      // div.classList.add('green','blue');
+      // fruit.forEach(element => console.log(element));
+
+      const input = document.querySelectorAll('input');
+      const textarea = document.querySelectorAll('textarea');
+
+      input.forEach(el => el.classList.add("form-control"));
+      textarea.forEach(el => el.classList.add("form-control"));
+
+    </script>
+
 {% endblock content %}
