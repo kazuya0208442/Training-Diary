@@ -5,8 +5,6 @@ from .models import Staff, Target, TodoModel, Training, Week
 from django.urls import reverse_lazy
 from .change_link import change_link
 from .day_computed import day_computed
-import datetime
-
 
 
 
