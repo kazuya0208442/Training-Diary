@@ -144,6 +144,7 @@
     max-width: 840px;
     max-height: 472.5px;
     margin: 0 auto;
+    margin-top: 25px;
 }
   .wrapper:before {
     content:"";
@@ -157,6 +158,16 @@
     width: 100%;
     height: 100%;
 }
+  .card-body p {
+    width: 96%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .card-body .card-title {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
 
 
 
@@ -376,8 +387,8 @@
     大会での達成目標(<span class="purple">長期</span>目標)
   </div>
   <div class="card-body">
-    <h5 class="card-title">{{ item.long_target }}</h5>
-    <p class="card-text">{{ item.long_target_summary }}</p>
+    <h4 class="card-title">{{ item.long_target }}</h4>
+    <p class="card-text text-left">{{ item.long_target_summary }}</p>
     <div class="wrapper">
       <!-- <iframe class="content" width="560" height="315" src="https://www.youtube.com/embed/eZA0AnSdbBI?autoplay=1&mute=1&start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       {{ link_new_long | safe}}
@@ -394,8 +405,8 @@
     今月の達成目標(<span class="purple">中期</span>目標)
   </div>
   <div class="card-body">
-    <h5 class="card-title">{{ item.middle_target }}</h5>
-    <p class="card-text">{{ item.middle_target_summary }}</p>
+    <h4 class="card-title">{{ item.middle_target }}</h4>
+    <p class="card-text text-left">{{ item.middle_target_summary }}</p>
     <div class="wrapper">
       <iframe class="content" width="560" height="315" src="https://www.youtube.com/embed/ZOFO_MzZi50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -411,8 +422,8 @@
     今週の達成目標(<span class="purple">短期</span>目標)
   </div>
   <div class="card-body">
-    <h5 class="card-title">{{ item.short_target }}</h5>
-    <p class="card-text">{{ item.middle_target_summary }}</p>
+    <h4 class="card-title">{{ item.short_target }}</h4>
+    <p class="card-text text-left">{{ item.middle_target_summary }}</p>
   </div>
   <div class="card-footer text-muted">
     頑張っていきましょう!!
@@ -496,13 +507,34 @@
     width: 90%;
   }
 
-  .list-group-item {
+  .list-group-item.daily {
     background-color: #fcfff080 !important;
   }
 
-  .graph {
+  /* .graph_1 {
+    margin-top: 20px;
+  } */
+  .graph_2 {
+    margin-top: 40px;
+  }
+  .graph_3 {
     margin-top: 55px;
   }
+
+  .card-body p {
+    width: 93%;
+    margin: 0 auto;
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+
+  .card-body .card-title {
+    margin-bottom: 14px;
+    font-size: 26px;
+    margin-top: 12px;
+  }
+
+
 
 @media screen and (max-width: 770px) {
 
@@ -557,14 +589,14 @@
       <a href="{% url 'c_detail' item.pk %}" class="link"></a>
       <div class="card-header main">{{item.date |date:"n" }}月{{item.date |date:"j" }}日({{item.date |date:"D" }})</div>
       <div class="card-body">
-        <h5 class="card-title">{{item.dairy_target}}</h5>
-        <p class="card-text main">{{item.dairy_target_summary}}</p>
+        <h4 class="card-title">{{item.dairy_target}}</h4>
+        <p class="card-text main text-left">{{item.dairy_target_summary}}</p>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">運動時間の合計:&nbsp;{{item.training_time}}&nbsp;時間</li>
-        <li class="list-group-item">体幹トレーニング:&nbsp;{{item.stability_time}}&nbsp;分</li>
-        <li class="list-group-item">ストレッチ:&nbsp;{{item.stretch_time}}&nbsp;分</li>
-        <li class="list-group-item">睡眠時間:&nbsp;{{item.sleeping_hours}}&nbsp;時間</li>
+        <li class="list-group-item daily">運動時間の合計:&nbsp;{{item.training_time}}&nbsp;時間</li>
+        <li class="list-group-item daily">体幹トレーニング:&nbsp;{{item.stability_time}}&nbsp;分</li>
+        <li class="list-group-item daily">ストレッチ:&nbsp;{{item.stretch_time}}&nbsp;分</li>
+        <li class="list-group-item daily">睡眠時間:&nbsp;{{item.sleeping_hours}}&nbsp;時間</li>
       </ul>
     </div>
   {% endfor %}
@@ -591,20 +623,25 @@
     今週の振り返り
   </div>
   <div class="card-body">
-    <h5 class="card-title">{{item.title}}</h5>
-    <p class="card-text">{{item.summary}}</p>
-    <div class="chart-container" style="position: relative; max-width: 80%; max-height: 80%; margin: 0 auto;">
-      <div class="graph">
-        <canvas id="myChart_1" width="400" height="400"></canvas>
-      </div>
-      <div class="graph">
-        <canvas id="myChart_2" width="400" height="400"></canvas>
-      </div>
-      <div class="graph">
-      <canvas id="myChart_3" width="400" height="400"></canvas>
-      </div>
-    </div>
+    <h4 class="card-title">{{item.title}}</h4>
+    <p class="card-text text-left">{{item.summary}}</p>
   </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <div class="chart-container" style="position: relative; max-width: 80%; max-height: 80%; margin: 0 auto;">
+        <div class="graph_1">
+          <canvas id="myChart_1" width="400" height="400"></canvas>
+        </div>
+        <div class="graph_2">
+          <canvas id="myChart_2" width="400" height="400"></canvas>
+        </div>
+        <div class="graph_3">
+          <canvas id="myChart_3" width="400" height="400"></canvas>
+        </div>
+      </div>
+    </li>
+  </ul>
+  
 </div>
 
 
@@ -648,7 +685,7 @@
             responsive: true,
             display: true,
             text: '今週の運動時間',
-            fontSize: 34,
+            fontSize: 26,
             fontColor: '#122',
             padding: 28,
             fontFamily: 'Kiwi Maru',
@@ -746,7 +783,7 @@
             responsive: true,
             display: true,
             text: '今週の体幹トレーニング',
-            fontSize: 34,
+            fontSize: 26,
             fontColor: '#122',
             padding: 28,
             fontFamily: 'Kiwi Maru',
@@ -844,7 +881,7 @@
             responsive: true,
             display: true,
             text: '今週の睡眠時間',
-            fontSize: 34,
+            fontSize: 26,
             fontColor: '#122',
             padding: 28,
             fontFamily: 'Kiwi Maru',
@@ -916,8 +953,8 @@
     スタッフから
   </div>
   <div class="card-body">
-    <h5 class="card-title">{{item.title}}</h5>
-    <p class="card-text">{{item.staff}}</p>
+    <h4 class="card-title">{{item.title}}</h4>
+    <p class="card-text text-left">{{item.staff}}</p>
   </div>
 </div>
 {% endfor %}
