@@ -7,7 +7,7 @@ import datetime
 class TestCi(TestCase):
 
     def test_daycomputed(self):
-        self.assertEqual(day_computed(datetime.date.today()), 1)
+        self.assertEqual(day_computed(datetime.date.today() + datetime.timedelta(days=1)), 1)
 
     def test_change_link(self):
         string = '<iframe width="560" height="315" src="https://www.youtube.com/embed/eZA0AnSdbBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'

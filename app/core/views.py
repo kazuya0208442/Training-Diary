@@ -1,5 +1,4 @@
 from django.db.models import fields
-# from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
 from .models import Staff, Target, Training, Week
 from django.urls import reverse_lazy
@@ -7,7 +6,6 @@ from .change_link import change_link
 from .day_computed import day_computed
 
 # Create your views here.
-
 
 class Home(ListView):
    template_name = 'app_home.html'
