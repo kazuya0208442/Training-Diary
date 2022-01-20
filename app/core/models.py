@@ -7,7 +7,6 @@ class Sample(models.Model):
 
 
 class Training(models.Model):
-
     dairy_target = models.CharField(max_length=100, help_text='今日のタイトル')
     dairy_target_menu = models.TextField(help_text='トレーニングメニュー')
     dairy_target_summary = models.TextField(help_text='意識したこと・達成したこと')
@@ -37,12 +36,10 @@ class Target(models.Model):
     middle_target_link = models.TextField(help_text='YouTube の埋め込みリンク', blank=True, null=True)
     middle_target_link_start = models.IntegerField(default=0, help_text='YouTube の再生開始時間', blank=True, null=True)
 
-
     short_target = models.CharField(max_length=100, help_text='短期目標')
     short_target_summary = models.TextField(help_text='短期目標の詳細について')
     short_target_link = models.TextField(help_text='YouTube の埋め込みリンク', blank=True, null=True)
     short_target_link_start = models.IntegerField(default=0, help_text='YouTube の再生開始時間', blank=True, null=True)
-
 
     def __str__(self):
         return self.long_target

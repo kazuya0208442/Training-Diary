@@ -145,8 +145,8 @@
   .wrapper {
     position: relative;
     width: 100%;
-    max-width: 840px;
-    max-height: 472.5px;
+    max-width: 740px;
+    max-height: 416.25px;
     margin: 0 auto;
     /* padding-top: 70px; */
     margin-top: 9px;
@@ -469,9 +469,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 90%;
+    width: 92%;
     margin: 0 auto;
     position: relative;
+  }
+
+  .card-deck {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
   }
 
   .card-container .link {
@@ -487,7 +492,7 @@
   .card-container::after {
     display: block;
     content:"";
-    width: 50%;
+    width: 66.5%;
     /* width: 300px; */
   }
 
@@ -531,7 +536,8 @@
     width: 93%;
     margin: 0 auto;
     font-size: 18px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
   }
 
   .card-body .card-title {
@@ -541,6 +547,16 @@
   }
 
 
+
+@media screen and (max-width: 970px) {
+
+  .card-container::after {
+    display: block;
+    content:"";
+    width: 50%;
+  }
+  
+}
 
 @media screen and (max-width: 770px) {
 
