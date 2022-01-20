@@ -27,6 +27,5 @@ jobs:
       
     - name: Run Tests
       run: |
-        docker-compose exec -T db psql -h 172.18.0.2 -U postgres -d postgres -p 5432
         docker-compose exec -T app sh -c "python manage.py test"
         
