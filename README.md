@@ -1,16 +1,18 @@
-# 📱 Training-Diary(App)
+
+# &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📱 Training-Diary(App)
+
    &nbsp;&nbsp;福岡県と日本オリンピック委員会が協力して、2004年から、日本で初めてのオリンピック選手育成事業が始まりました。約５万人の子供たちの中から、約１５０人が選抜され、日の丸をつけてプレーをします。  
    
    
-  &nbsp;&nbsp;オリンピック強化選手になると、運動日誌の提出が義務付けられます。ただ、紙に記入して提出するため、字が読み辛かったり、紛失してしまうことがよくありました。この問題を解決するべく、運動日誌アプリを製作しました。  
+  &nbsp;&nbsp;オリンピック強化選手になると、運動日誌の提出が義務付けられます。ただ、紙に記入して提出するため、字が読み辛かったり、紛失してしまうことがよくありました。この問題を解決するべく、運動日誌アプリを製作しました。:point_right: [http://kazuya-portfolio.com](http://kazuya-portfolio.com/)
 
 gif
 
-## :page_facing_up: Training-Diary(Paper)
+# &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :page_facing_up: Training-Diary(Paper)
 現在使用されている運動日誌の原本です。
 
 
-## ⚡️ Features  
+##  ⚡️ Features  
 - 目標にしている選手のプレーが自動で流れます！！
   - [ YouTube link ] と [ 開始秒数 ] の入力が必要です。   
 
