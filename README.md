@@ -67,4 +67,3 @@ gif
 [DEPOYING DJANGO WITH DOCKER COMPOSE](https://londonappdeveloper.com/deploying-django-with-docker-compose/)
 
 
-
