@@ -9,7 +9,17 @@ gif
 
 ## 🎨 Built With  
 以下の技術を使用しました。
-- a
+- python
+- Django
+- postgreSQL
+- nginx
+- Docker / Docker-Compose
+- AWS
+  - EC2
+  - Route53
+- HTML
+- CSS
+- Javascript
 
 ## 🛠 Test 
 - a
