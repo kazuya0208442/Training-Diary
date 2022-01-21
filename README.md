@@ -8,7 +8,9 @@
 gif
 
 #   :page_facing_up: Training-Diary(Paper)
-現在使用されている運動日誌の原本です。
+現在使用されている**運動日誌の原本**です。
+
+![運動日誌](https://1.bp.blogspot.com/-3FZ1k9yqBpY/YSsJhBkrKUI/AAAAAAAALX4/kooOBy9ikyQItw8BJdA0jqLyMMAiCnTRgCLcBGAsYHQ/s1754/Jr.%25E6%2597%25A5%25E8%25AA%258C%2B%25E8%25A1%25A8.jpg)
 
 
 ##  ⚡️ Features  
