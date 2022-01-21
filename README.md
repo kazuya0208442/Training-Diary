@@ -1,8 +1,8 @@
-# Todo-App
-Docer、AWS、Djangoを用いた[Todo-App](http://kazuya-portfolio.com/list/)を製作しました。    
+# Training-Diary
+  オリンピック強化選手になると、運動日誌の提出が義務付けられます。ただ、紙に記入して提出するため、字が読み辛かったり、紛失してしまうことがよくありました。この問題を解決するべく、運動日誌アプリを製作しました。
 
 
-![スクリーンショット 2021-12-16 160457](https://user-images.githubusercontent.com/87218628/146324002-636cd72f-62c8-4f1e-8aa0-42cb760bb8a3.png)
+
 
 ## Infrastructure
 ![](https://user-images.githubusercontent.com/87218628/145961368-510f1b40-7187-4271-9bb2-2fadcbd43c84.jpg)
