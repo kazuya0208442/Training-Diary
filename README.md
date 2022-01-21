@@ -12,12 +12,13 @@ gif
 
 ## 🎨 Built With  
 以下の技術を使用しました。
-- python
-- Django
-- postgreSQL
+- Python 3.9.9
+- Django 3.2.11
+- PostgreSQL 13.5
 - nginx
-- Docker / Docker-Compose
+- Docker / Docker-compose
 - AWS
+  - VPC
   - EC2
   - Route53
 - HTML
