@@ -394,10 +394,10 @@
   <div class="card-body">
     <h4 class="card-title">{{ item.long_target }}</h4>
     <p class="card-text text-left">{{ item.long_target_summary }}</p>
-    <div class="wrapper">
+    <!-- <div class="wrapper"> -->
       <!-- <iframe class="content" width="560" height="315" src="https://www.youtube.com/embed/eZA0AnSdbBI?autoplay=1&mute=1&start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-      {{ link_new_long | safe}}
-    </div>
+      {{ link_long | safe}}
+    <!-- </div> -->
   </div>
   <div class="card-footer">
     大会日程:&nbsp;{{item.long_target_date |date:"n" }}月{{item.long_target_date |date:"j" }}日({{item.long_target_date |date:"D" }})まで残り<span class="purple">{{ time_delta }}</span>日
@@ -412,9 +412,10 @@
   <div class="card-body">
     <h4 class="card-title">{{ item.middle_target }}</h4>
     <p class="card-text text-left">{{ item.middle_target_summary }}</p>
-    <div class="wrapper">
-      <iframe class="content" width="560" height="315" src="https://www.youtube.com/embed/ZOFO_MzZi50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <!-- <div class="wrapper"> -->
+      <!-- <iframe class="content" width="560" height="315" src="https://www.youtube.com/embed/ZOFO_MzZi50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      {{ link_middle | safe}}
+    <!-- </div> -->
   </div>
   <div class="card-footer">
     <!-- 期限:&nbsp;2月25日まで残り<span class="purple">32</span>日 -->
@@ -430,11 +431,23 @@
   <div class="card-body">
     <h4 class="card-title">{{ item.short_target }}</h4>
     <p class="card-text text-left">{{ item.middle_target_summary }}</p>
+    <!-- <div class="wrapper"> -->
+      <!-- <iframe class="content" width="560" height="315" src="https://www.youtube.com/embed/ZOFO_MzZi50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      {{ link_short | safe}}
+    <!-- </div> -->
   </div>
   <div class="card-footer">
     頑張っていきましょう!!
   </div>
 </div>
+
+<script>
+
+  const iframe = document.querySelectorAll('iframe');
+
+  iframe.forEach(el => el.classList.add("content"));
+
+</script>
 {% endfor %}
 
 
