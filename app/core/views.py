@@ -29,7 +29,10 @@ class Home(ListView):
 
        link = Target.objects.values('long_target_link').get(pk=1)['long_target_link']
        link_start = Target.objects.values('long_target_link_start').get(pk=1)['long_target_link_start']
-       new_link = change_link(link, link_start)
+       link_long = change_link(link, auto=1, start=link_start)
+       link_middle = change_link(Target.objects.values('middle_target_link').get(pk=1)['middle_target_link'], auto=0)
+       link_short = change_link(Target.objects.values('short_target_link').get(pk=1)['short_target_link'], auto=0)
+
 
        context = super(Home, self).get_context_data(**kwargs)
        context.update({
@@ -39,7 +42,9 @@ class Home(ListView):
            't_time_new': t_time_new,
            'stability_time_new': stability_time_new,
            's_time_new': s_time_new,
-           'link_new_long': new_link,
+           'link_long': link_long,
+           'link_middle': link_middle,
+           'link_short': link_short,
            'time_delta': time_delta,
        })
        return context
