@@ -25,8 +25,10 @@ gif
 - CSS
 - Javascript
 
-## 🛠 Test 
-- 単体テスト
+## 🛠 Unit Test 
+- model 
+- url
+- view
 
 
 ## :trident: Infrastructure
