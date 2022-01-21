@@ -1,4 +1,4 @@
-# &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📱 Training-Diary(App) 
+# 📱 Training-Diary(App) 
 
    &nbsp;&nbsp;福岡県と日本オリンピック委員会が協力して、2004年から、日本で初めてのオリンピック選手育成事業が始まりました。約５万人の子供たちの中から、約１５０人が選抜され、日の丸をつけてプレーをします。  
    
@@ -7,7 +7,7 @@
 
 gif
 
-# &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  :page_facing_up: Training-Diary(Paper)
+#   :page_facing_up: Training-Diary(Paper)
 現在使用されている運動日誌の原本です。
 
 
