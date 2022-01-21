@@ -1,14 +1,18 @@
-# Training-Diary
-  オリンピック強化選手になると、運動日誌の提出が義務付けられます。ただ、紙に記入して提出するため、字が読み辛かったり、紛失してしまうことがよくありました。この問題を解決するべく、運動日誌アプリを製作しました。
+# :jp: Training-Diary
+  オリンピック強化選手になると、運動日誌の提出が義務付けられます。ただ、紙に記入して提出するため、字が読み辛かったり、紛失してしまうことがよくありました。この問題を解決するべく、運動日誌アプリを製作しました。  
+
+gif
+
+## 🎨 Built With  
+以下の技術を使用しました。
+- a�
 
 
-
-
-## Infrastructure
+## 🛠 Infrastructure
 ![](https://user-images.githubusercontent.com/87218628/145961368-510f1b40-7187-4271-9bb2-2fadcbd43c84.jpg)
 
 
-## Reference  
+## References  
 [Django with Nginx, Gunicorn A Production Ready Solution.](https://medium.com/analytics-vidhya/dajngo-with-nginx-gunicorn-aaf8431dc9e0)  
 [How To Deploy Django App with Nginx, Gunicorn, PostgreSQL and Let’s Encrypt SSL on Ubuntu](https://djangocentral.com/deploy-django-with-nginx-gunicorn-postgresql-and-lets-encrypt-ssl-on-ubuntu/)  
 [Creating and Deploying a Django Application to AWS](https://www.pulumi.com/blog/deploying-a-django-application-to-aws/)  
