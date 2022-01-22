@@ -9,16 +9,16 @@
 
 この問題を解決するべく、**運動日誌アプリ**を製作しました。:point_right:  &nbsp;[http://kazuya-portfolio.com](http://kazuya-portfolio.com/)
 
-gif
+![](https://media.giphy.com/media/62rfKf9XfUsNKwnWyo/giphy.gif)
 
 #   :page_facing_up: 実際の運動日誌
  **現在使用されている運動日誌**です。
 
-![運動日誌](https://1.bp.blogspot.com/-3FZ1k9yqBpY/YSsJhBkrKUI/AAAAAAAALX4/kooOBy9ikyQItw8BJdA0jqLyMMAiCnTRgCLcBGAsYHQ/s1754/Jr.%25E6%2597%25A5%25E8%25AA%258C%2B%25E8%25A1%25A8.jpg)
+<img src="https://1.bp.blogspot.com/-3FZ1k9yqBpY/YSsJhBkrKUI/AAAAAAAALX4/kooOBy9ikyQItw8BJdA0jqLyMMAiCnTRgCLcBGAsYHQ/s1754/Jr.%25E6%2597%25A5%25E8%25AA%258C%2B%25E8%25A1%25A8.jpg" width="70%">
 
 **私の時代の運動日誌**です。
 
-![IMG_0109-min](https://user-images.githubusercontent.com/87218628/150491732-94782151-2c42-497f-b475-69f65a2287dd.JPG)
+<img src="https://user-images.githubusercontent.com/87218628/150491732-94782151-2c42-497f-b475-69f65a2287dd.JPG" width="70%">
 
 
 ##  ⚡️ Features  
