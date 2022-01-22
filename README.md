@@ -52,7 +52,7 @@
 - HTML
 - CSS
 - Javascript
-- 1人疑似チーム開発 ( GitHub-Flow : issue -> feature branch -> pull request)
+- **1人疑似チーム開発 ( GitHub-Flow : issue -> feature branch -> pull request)**
 
 ## 🛠 Unit Test 
 - model 
