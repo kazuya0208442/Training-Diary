@@ -1,10 +1,17 @@
 # 📱 Training-Diary(App) 
 
-&nbsp;&nbsp;&nbsp;&nbsp;また、オリンピック強化選手になると、**運動日誌の提出**が義務付けられます。ただ、紙に記入して提出するため、字が読み辛かったり、紛失してしまうことがよくありました。この問題を解決するべく、**運動日誌アプリ**を製作しました。:point_right:  &nbsp;[http://kazuya-portfolio.com](http://kazuya-portfolio.com/)
+オリンピック強化選手になると、**運動日誌の提出**が義務付けられます。ただ、いくつか不便な点があります。
+- 記入欄が狭い
+- 字が読み辛い
+- 過去のデータと比較が困難
+- 紛失リスク
+
+
+この問題を解決するべく、**運動日誌アプリ**を製作しました。:point_right:  &nbsp;[http://kazuya-portfolio.com](http://kazuya-portfolio.com/)
 
 gif
 
-#   :page_facing_up: Training-Diary(Paper)
+#   :page_facing_up: 実際の運動日誌
  **現在使用されている運動日誌**です。
 
 ![運動日誌](https://1.bp.blogspot.com/-3FZ1k9yqBpY/YSsJhBkrKUI/AAAAAAAALX4/kooOBy9ikyQItw8BJdA0jqLyMMAiCnTRgCLcBGAsYHQ/s1754/Jr.%25E6%2597%25A5%25E8%25AA%258C%2B%25E8%25A1%25A8.jpg)
@@ -16,15 +23,14 @@ gif
 
 ##  ⚡️ Features  
 - 目標にしている選手のプレーが**自動**で流れます！！
-  - [ YouTube link ] と [ 開始秒数 ] の入力が必要です。   
 
 
 - 「運動時間」「体幹トレーニング」「睡眠時間」が**グラフ**に！！
-  - １週間の推移を確認して、今後のトレーニング計画を立てましょう
+
 
 
 - **レスポンシブ対応！！**
-  - どの端末からでも見やすいレイアウトになっています。
+
 
 
 ## 🎨 Built With  
