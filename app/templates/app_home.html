@@ -397,7 +397,7 @@
   </div>
   <div class="card-body">
     <h4 class="card-title">{{ item.long_target }}</h4>
-    <p class="card-text text-left">{{ item.long_target_summary }}</p>
+    <p class="card-text text-left">{{ item.long_target_summary | linebreaksbr }}</p>
     <!-- <div class="wrapper"> -->
       <!-- <iframe class="content" width="560" height="315" src="https://www.youtube.com/embed/eZA0AnSdbBI?autoplay=1&mute=1&start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       {{ link_long | safe}}
@@ -415,7 +415,7 @@
   </div>
   <div class="card-body">
     <h4 class="card-title">{{ item.middle_target }}</h4>
-    <p class="card-text text-left">{{ item.middle_target_summary }}</p>
+    <p class="card-text text-left">{{ item.middle_target_summary | linebreaksbr }}</p>
     <!-- <div class="wrapper"> -->
       <!-- <iframe class="content" width="560" height="315" src="https://www.youtube.com/embed/ZOFO_MzZi50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       {{ link_middle | safe}}
@@ -434,7 +434,7 @@
   </div>
   <div class="card-body">
     <h4 class="card-title">{{ item.short_target }}</h4>
-    <p class="card-text text-left">{{ item.short_target_summary }}</p>
+    <p class="card-text text-left">{{ item.short_target_summary | linebreaksbr }}</p>
     <!-- <div class="wrapper"> -->
       <!-- <iframe class="content" width="560" height="315" src="https://www.youtube.com/embed/ZOFO_MzZi50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       {{ link_short | safe}}
@@ -633,7 +633,7 @@
       <div class="card-header main">{{item.date |date:"n" }}月{{item.date |date:"j" }}日({{item.date |date:"D" }})</div>
       <div class="card-body">
         <h4 class="card-title">{{item.dairy_target}}</h4>
-        <p class="card-text main text-left">{{item.dairy_target_summary}}</p>
+        <p class="card-text main text-left">{{item.dairy_target_summary | linebreaksbr }}</p>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item daily">運動時間の合計:&nbsp;{{item.training_time}}&nbsp;時間</li>
