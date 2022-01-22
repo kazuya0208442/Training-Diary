@@ -4,6 +4,10 @@
 
 <style>
 
+  .card-text {
+    text-indent: 1em;
+  }
+
   .hero {
   display: flex;
   justify-content: center;
@@ -462,6 +466,10 @@
 
 <style>
 
+  .card-text {
+    text-indent: 1em;
+  }
+
   .card-text.main {
   display: -webkit-box;
   overflow: hidden;
@@ -646,7 +654,7 @@
   </div>
   <div class="card-body">
     <h4 class="card-title">{{item.title}}</h4>
-    <p class="card-text text-left">{{item.summary}}</p>
+    <p class="card-text text-left">{{item.summary | linebreaksbr }}</p>
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">
@@ -977,7 +985,7 @@
   </div>
   <div class="card-body">
     <h4 class="card-title">{{item.title}}</h4>
-    <p class="card-text text-left">{{item.staff}}</p>
+    <p class="card-text text-left">{{item.staff | linebreaksbr }}</p>
   </div>
 </div>
 {% endfor %}
