@@ -128,7 +128,7 @@
 
   .card-header.target {
     font-size: 30px;
-    background-color: #fff1f1;
+    background-color: #fbd7d7ab;
     white-space: nowrap;
   }
 
@@ -137,7 +137,7 @@
   }
 
   .card-footer {
-    background-color: #fff1f1;
+    background-color: #fbd7d7ab;
   }
 
   iframe {
@@ -364,6 +364,15 @@
 
 }
 
+@media screen and (min-width: 1500px) {
+
+  img {
+      height: 910px;
+    }
+
+}
+
+
 </style>
 
 
@@ -465,6 +474,10 @@
 {% block content %} 
 
 <style>
+
+  .card-header.week {
+    background-color: #f2c4ff94;
+  }
 
   .card-text {
     text-indent: 1em;
@@ -649,7 +662,7 @@
 {% for item in week %}
 <div class="card text-center mt-5">
   <a href="{% url 'w_update' item.pk %}" class="link"></a>
-  <div class="card-header">
+  <div class="card-header week">
     今週の振り返り
   </div>
   <div class="card-body">
