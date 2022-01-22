@@ -7,7 +7,10 @@
 - 紛失リスク
 
 
-この問題を解決するべく、**運動日誌アプリ**を製作しました。:point_right:  &nbsp;[http://kazuya-portfolio.com](http://kazuya-portfolio.com/)  
+この問題を解決するべく、**運動日誌アプリ**を製作しました。:point_right:  &nbsp;[http://kazuya-portfolio.com](http://kazuya-portfolio.com/)  　
+
+
+アプリ内の記入例は**当時の私の運動日誌**をそのまま使ってます(^^♪
 
 
 
