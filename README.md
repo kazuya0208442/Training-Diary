@@ -1,4 +1,4 @@
-# 📱 Training-Diary(App) 
+# 📱 Training-Diary (運動日誌アプリ) 
 
 オリンピック強化選手になると、**運動日誌の提出**が義務付けられます。ただ、いくつか不便な点があります。
 - 記入欄が狭すぎる
@@ -7,20 +7,24 @@
 - 紛失リスク
 
 
-この問題を解決するべく、**運動日誌アプリ**を製作しました。:point_right:  &nbsp;[http://kazuya-portfolio.com](http://kazuya-portfolio.com/)  
+この問題を解決するべく、**運動日誌アプリ**を製作しました。:point_right:  &nbsp;[http://kazuya-portfolio.com](http://kazuya-portfolio.com/)  　
+
+
+アプリ内の記入例は**当時の私の運動日誌**をそのまま使ってます(^^♪
 
 
 
 <img src="https://media.giphy.com/media/62rfKf9XfUsNKwnWyo/giphy.gif" width="60%">
 
 #   :page_facing_up: 実際の運動日誌
- **現在使用されている運動日誌**です。
+ ### **現在使用されている運動日誌**です。
 
 <img src="https://1.bp.blogspot.com/-3FZ1k9yqBpY/YSsJhBkrKUI/AAAAAAAALX4/kooOBy9ikyQItw8BJdA0jqLyMMAiCnTRgCLcBGAsYHQ/s1754/Jr.%25E6%2597%25A5%25E8%25AA%258C%2B%25E8%25A1%25A8.jpg" width="70%">
 
-**私の時代の運動日誌**です。ボロボロですみません(笑)
+### **私の時代の運動日誌**です。この２枚の写真しか残っていませんでした...😢 見にくい写真でごめんなさい。
 
 <img src="https://user-images.githubusercontent.com/87218628/150491732-94782151-2c42-497f-b475-69f65a2287dd.JPG" width="70%">
+<img src="https://user-images.githubusercontent.com/87218628/152968926-8a1f71e5-1149-4e0f-8d17-01aa01be40e6.png" width="70%">
 
 
 ##  ⚡️ Features  
@@ -49,6 +53,7 @@
 - HTML
 - CSS
 - Javascript
+- **1人疑似チーム開発 ( GitHub-Flow : issue -> feature branch -> pull request)**
 
 ## 🛠 Unit Test 
 - model 
