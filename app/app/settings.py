@@ -138,14 +138,20 @@ USE_TZ = True
 # All static file URLs は自動的に/static/static/が先頭につく。
 # All media file URLs は自動的に/static/media/が先頭につく。
 # このURL構成を利用して、nginx reverse proxyの設定を後で行う。
-STATIC_URL = '/static/static/'
-MEDIA_URL = '/static/media/'
+# STATIC_URL = '/static/static/'
+STATIC_URL = '/static/'
+# MEDIA_URL = '/static/media/'
 
 # static and media filesがどこに保存されるのかを設定する。
 # ユーザーがプロフィール画像を投稿した時はMEDIA_ROOTに保存される。
 # collectstatic command でstatic files はSTATIC_ROOTに保存される。
-MEDIA_ROOT = '/vol/web/media'
-STATIC_ROOT = '/vol/web/static'
+# MEDIA_ROOT = '/vol/web/media'
+# STATIC_ROOT = '/vol/web/static'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static_local',
+]
+STATIC_ROOT = BASE_DIR / "vol/web/static"
+# MEDIA_ROOT = BASE_DIR / "vol/web/media" 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

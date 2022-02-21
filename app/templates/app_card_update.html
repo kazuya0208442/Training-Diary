@@ -7,24 +7,18 @@
         margin: 0 auto;
         padding-top: 70px;
       }
-
       textarea {
         height: 40vh !important;
       }
-
       .update {
         display: flex;
         justify-content: center;
         margin-bottom: 45px;
       }
-
       label {
         color: darkred;
       }
-
     </style>
-
-
 
     <div class="form_container">
         <form action='' method='POST' onsubmit="return false;" >{% csrf_token %}
@@ -108,16 +102,12 @@
       </form>
     </div>
     
-
-
     <script>
-
       const input = document.querySelectorAll('input');
       const textarea = document.querySelectorAll('textarea');
 
       input.forEach(el => el.classList.add("form-control"));
       textarea.forEach(el => el.classList.add("form-control"));
-
     </script>
 
 {% endblock content %}

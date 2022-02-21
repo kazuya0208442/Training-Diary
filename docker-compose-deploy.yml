@@ -8,9 +8,9 @@ services:
       context: .
     # restart: always にすることで、crushしたときに自動的にappがリスタートするように設定する。本番環境での安定性を向上させる。
     restart: always
-    # /vol/web のデータをstatic-dataに紐づける。これでproxyがアクセスできる。
+    # /app/vol/web/static のデータをstatic-dataに紐づける。これでproxyがアクセスできる。
     volumes:
-      - static-data:/vol/web
+      - static-data:/app/vol/web/static
 
     # 環境変数を決定するときは${ENV}のように、変数を使う。
     # パスワードなどを直接書き込むのではなく、外部のファイルから読み込む。
@@ -67,7 +67,6 @@ services:
     # proxy が静的ファイルをリクエスト先に返すことができる。
     volumes:
       - static-data:/vol/static
-      # - static-data:/vol/web      # /vol/webだと思うんだけど。
 
 
 
