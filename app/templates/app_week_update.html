@@ -7,28 +7,21 @@
         margin: 0 auto;
         padding-top: 70px;
       }
-
       textarea {
         height: 50vh !important;
       }
-
       .update {
         display: flex;
         justify-content: center;
         margin-bottom: 45px;
       }
-
       label {
         color: darkred;
       }
-
     </style>
-
-
 
     <div class="form_container">
         <form action='' method='POST' onsubmit="return false;" >{% csrf_token %}
-
         <div class="form-group">
           <label for="id_long_target">タイトル</label>
           {{ form.title }}
@@ -43,7 +36,6 @@
             今週の自分の行動を振り返ってください
           </small>
         </div>
-        
         <div class="update">
           <input type='button' value='更新する' class="btn btn-outline-success" onclick="submit();" style="width: 30vh;">
         </div>
@@ -52,8 +44,6 @@
         </div>
       </form>
     </div>
-    
-
 
     <script>
 
