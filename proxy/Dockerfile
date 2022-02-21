@@ -20,6 +20,10 @@ RUN mkdir -p /vol/static && \
     chmod +x /run.sh
 
 # Exposes /vol/static as a volume
+# /vol/static の下に、admin, css ファイルがある。
+# app のコンテナのvolumeの設定 static-data:/app/vol/web/static
+# proxy のコンテナのvolumeの設定 static-data:/vol/static 
+# これにより、proxy -> static-data <- app proxy から静的ファイルをレスポンスで返すことができる。
 VOLUME /vol/static
 
 # Switches back to the nginx user

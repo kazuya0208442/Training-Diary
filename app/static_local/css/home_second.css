@@ -1,0 +1,160 @@
+  .card-header.week {
+    background-color: #f2c4ff94;
+
+    /* gif用 */
+    /* background-color: #ce4ef26e; */
+  }
+
+  .card-text {
+    text-indent: 1em;
+  }
+
+  .card-text.main {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  }
+
+  .card.bg-light {
+    min-height: 400px;
+    flex-basis: 30%;
+    margin-bottom: 100px;
+    background-color: #fcfff080 !important;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 92%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .card-deck {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+
+  .card-container .link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+
+  .card-container::after {
+    display: block;
+    content:"";
+    width: 66.5%;
+    /* width: 300px; */
+  }
+
+  .card-header.main {
+    background-color: #fffe2e33;
+    /* background-color: #fffa5c85; */
+  }
+
+  .title h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 80px;
+    /* width: 90%; */
+    /* margin-left: 5%; */
+    border: 1px solid;
+    background-color: #f9e92547;
+
+  }
+
+  .title {
+    max-width: 1070px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .list-group-item.daily {
+    background-color: #fcfff080 !important;
+  }
+
+  /* .graph_1 {
+    margin-top: 20px;
+  } */
+  .graph_2 {
+    margin-top: 40px;
+  }
+  .graph_3 {
+    margin-top: 55px;
+  }
+
+  .card-body p {
+    width: 93%;
+    margin: 0 auto;
+    font-size: 18px;
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
+  }
+
+  .card-body .card-title {
+    margin-bottom: 14px;
+    font-size: 26px;
+    margin-top: 12px;
+  }
+
+
+
+@media screen and (max-width: 970px) {
+
+  .card-container::after {
+    display: block;
+    content:"";
+    width: 50%;
+  }
+  
+}
+
+@media screen and (max-width: 770px) {
+
+  .card.bg-light {
+    flex-basis: 48%;
+  }
+
+  .chart-container {
+    max-height: 90% !important;
+    max-width: 90% !important;
+  }
+
+  .title h2 {
+    margin-bottom: 60px;
+    font-size: 35px;
+  }
+  
+}
+
+@media screen and (max-width: 570px) {
+
+  .card.bg-light {
+    flex-basis: 100%;
+  }
+
+  .card-container {
+    justify-content: center;
+}
+
+  .chart-container {
+    max-height: 95% !important;
+    max-width: 95% !important;
+  }
+
+  .title h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+
+}
+

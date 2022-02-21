@@ -4,8 +4,13 @@ set -e
 
 # データベースが完全に立ち上がるまで待機する。
 python manage.py wait_for_db
+
 # collectstaticにより、すべてのstatic files がSTATIC_ROOTへ集まる。nginxはshared volumeを通して、アクセスできる。
 python manage.py collectstatic --noinput
+
+# これもいると思う
+python manage.py makemigrations   
+
 # database migrations を行う。
 python manage.py migrate
 
