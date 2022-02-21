@@ -30,8 +30,6 @@ services:
     depends_on:
       - db
 
-
-
   db:
     # image をdocker-hub から取得
     image: postgres:13-alpine
@@ -45,7 +43,6 @@ services:
       - POSTGRES_DB=${DB_NAME}
       - POSTGRES_USER=${DB_USER}
       - POSTGRES_PASSWORD=${DB_PASS}
-
 
   # reverse proxy の設定
   proxy:
@@ -67,8 +64,6 @@ services:
     # proxy が静的ファイルをリクエスト先に返すことができる。
     volumes:
       - static-data:/vol/static
-
-
 
 # Docker Composeで管理する名前付きのvolume
 # このvolumeにより、コンテナを削除した後も中身のデータは保存される
