@@ -1,5 +1,5 @@
 from django.urls import path, include
-from .views import CardUpdate, Staff_detail, StaffUpdate, Target_detail, Home, Card_detail, Week_detail, WeekUpdate, TargetUpdate
+from .views import CardUpdate, Staff_detail, StaffUpdate, Target_detail, Home, Card_detail, Test, Week_detail, WeekUpdate, TargetUpdate
 
 
 urlpatterns = [
@@ -12,4 +12,5 @@ urlpatterns = [
     path('c_update/<int:pk>', CardUpdate.as_view(), name='c_update'),
     path('s_update/<int:pk>', StaffUpdate.as_view(), name='s_update'),
     path('w_update/<int:pk>', WeekUpdate.as_view(), name='w_update'),
+    path('test', Test.as_view(), name='test'),
 ]

@@ -14,7 +14,8 @@ services:
     # プロジェクト内の /app directory をコンテナ内の/app directoryに紐づける。コード変更を同期させることができる。
     volumes:
       - ./app:/app
-      - ./data/web:/vol/web
+      # - ./data/web/static:/app/vol/web/static
+      # - ./data/web/media:/app/vol/web/media
     # djangoの環境変数の設定をする。dbが接続できるようにするため。下記のdbの設定と同じにする必要がある。
     environment:
       - SECRET_KEY=devsecretkey

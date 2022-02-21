@@ -100,3 +100,7 @@ class WeekUpdate(UpdateView):
     model = Week
     fields = ('title', 'summary')
     success_url = reverse_lazy('home')      # 静的ページにしか使えない。
+
+class Test(ListView):
+   template_name = 'a.html'
+   model = Target
