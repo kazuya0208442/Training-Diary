@@ -17,23 +17,31 @@ class Home(ListView):
        def _to_float(x_list):
            return [float(v) for v in x_list]
        
+       # 大会の日程を取得
        target_date = Target.objects.values('long_target_date').get(pk=1)['long_target_date']
+       # 大会まで残り何日なのかを計算
        time_delta = day_computed(target_date)
-
+       # 運動時間を取得
        t_time = Training.objects.values_list('training_time', flat=True)
        t_time_new = _to_float(t_time)
+       # 体幹トレーニング時間を取得
        stability_time = Training.objects.values_list('stability_time', flat=True)
        stability_time_new = _to_float(stability_time)
+       # 睡眠時間を取得
        s_time = Training.objects.values_list('sleeping_hours', flat=True)
        s_time_new = _to_float(s_time)    # DECIMAL prefix を外す方法
-
+       # 長期目標のYouTube Link を取得
        link = Target.objects.values('long_target_link').get(pk=1)['long_target_link']
+       # YouTube の再生開始時間を取得
        link_start = Target.objects.values('long_target_link_start').get(pk=1)['long_target_link_start']
+       # 長期目標のYouTube Link を改造
        link_long = change_link(link, auto=1, start=link_start)
+       # 中期目標のYouTube Link を改造
        link_middle = change_link(Target.objects.values('middle_target_link').get(pk=1)['middle_target_link'], auto=0)
+       # 短期目標のYouTube Link を改造
        link_short = change_link(Target.objects.values('short_target_link').get(pk=1)['short_target_link'], auto=0)
 
-
+       # context を追加することで、HTMLの中から呼び出すことが可能
        context = super(Home, self).get_context_data(**kwargs)
        context.update({
            'training': Training.objects.all(),
