@@ -56,9 +56,8 @@
 - **1人疑似チーム開発 ( GitHub-Flow : issue -> feature branch -> pull request)**
 
 ## 🛠 Unit Test 
-- model 
-- url
-- view
+- YouTube Link を改造する関数
+- 大会までの残り日数を計算する関数
 
 
 ## :trident: Infrastructure
