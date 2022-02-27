@@ -6,12 +6,12 @@ services:
 # app という名の service を作る。
   app:
     build:
-      # build context を current directory にする。
+      # build context を current directory にする。docker の作業領域の指定。
       context: .
     # host の 8000番ポートと、コンテナの8000番ポートをつなげる。
     ports:
       - 8000:8000
-    # プロジェクト内の /app directory をコンテナ内の/app directoryに紐づける。コード変更を同期させることができる。
+    # プロジェクト内の /app directory をコンテナ内の/app directoryに紐づける。コード変更を同期させることができる。データの永続化。コンテナが消えてもホストにデータが残る。
     volumes:
       - ./app:/app
       # - ./data/web/static:/app/vol/web/static
@@ -30,7 +30,7 @@ services:
     # データベースの起動を待ってから、データベースに反映させて、サーバーを起動。
     command: >
       sh -c "python manage.py wait_for_db &&
-             python manage.py makemigrations &&          #これ付け足して、データベースを反映させた。
+             python manage.py makemigrations &&          #これ付け足して、データベースの変更を反映させた。
              python manage.py migrate &&
              python manage.py runserver 0.0.0.0:8000"
 
