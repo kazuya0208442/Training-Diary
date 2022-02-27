@@ -61,7 +61,7 @@ services:
       - 80:8000
     # コンテナ内の static-data volume を /vol/static にマップする
     # proxy が static-data volume を通じて、/vol/static にアクセスできる
-    # proxy が静的ファイルをリクエスト先に返すことができる。
+    # proxy が静的ファイルをレスポンスとして返すことができる。
     volumes:
       - static-data:/vol/static
 

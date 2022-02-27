@@ -1,4 +1,5 @@
-# .gitignoreファイルは GitHub template からコピーしてきたもの。
+# git で管理したくないものリスト
+# gitignoreファイルは GitHub template からコピーしてきたもの。
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

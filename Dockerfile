@@ -6,7 +6,7 @@ ENV PYTHONUNBUFFERED 1
 
 # requirements.txtをイメージの中にコピーする。
 COPY ./requirements.txt /requirements.txt
-# app directory をイメージへコピーする。
+# app directory をコンテナへコピーする。
 COPY ./app /app
 # 
 COPY ./scripts /scripts
