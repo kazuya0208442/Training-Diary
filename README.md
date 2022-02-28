@@ -56,8 +56,8 @@
 - **1人疑似チーム開発 ( GitHub-Flow : issue -> feature branch -> pull request)**
 
 ## 🛠 Unit Test 
-- YouTube Link を改造する関数
-- 大会までの残り日数を計算する関数
+- [YouTube Link を改造する関数](https://github.com/kazuya0208442/Training-Diary/blob/main/app/core/change_link.py)
+- [大会までの残り日数を計算する関数](https://github.com/kazuya0208442/Training-Diary/blob/main/app/core/day_computed.py)  　
 
 
 ## :trident: Infrastructure
