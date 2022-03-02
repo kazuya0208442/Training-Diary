@@ -63,6 +63,11 @@
 ## :trident: Infrastructure
 ![](https://user-images.githubusercontent.com/87218628/145961368-510f1b40-7187-4271-9bb2-2fadcbd43c84.jpg)
 
+## 📖 Strength
+
+## 📖 difficulty
+
+## 📖 Points for improvement
 
 ## 📖 References  
 [Django with Nginx, Gunicorn A Production Ready Solution.](https://medium.com/analytics-vidhya/dajngo-with-nginx-gunicorn-aaf8431dc9e0)  
