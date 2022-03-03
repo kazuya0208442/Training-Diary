@@ -10,9 +10,8 @@
 この問題を解決するべく、**運動日誌アプリ**を製作しました。:point_right:  &nbsp;[http://kazuya-portfolio.com](http://kazuya-portfolio.com/)  　
 
 
-アプリ内の記入例は**当時の私の運動日誌**をそのまま使ってます(^^♪
-
-
+アプリ内の記入例は**当時の私の運動日誌**をそのまま使ってます(^^♪  
+<br>
 
 <img src="https://media.giphy.com/media/62rfKf9XfUsNKwnWyo/giphy.gif" width="60%">
 
@@ -41,7 +40,7 @@
 
 ## 🎨 Built With  
 以下の技術を使用しました。
-- Python 3.9.9
+- Python 3.9.9  
 - Django 3.2.11
 - PostgreSQL 13.5
 - nginx
@@ -63,11 +62,18 @@
 ## :trident: Infrastructure
 ![](https://user-images.githubusercontent.com/87218628/145961368-510f1b40-7187-4271-9bb2-2fadcbd43c84.jpg)
 
+
+## 📖 Development Purpose
+
 ## 📖 Strength
 
-## 📖 difficulty
+## 📖 Business Plan
 
-## 📖 Points for improvement
+## 📖 Difficulty
+
+## 📖 Points For Improvement
+
+## 📖 Why choose tequnique ?
 
 ## 📖 References  
 [Django with Nginx, Gunicorn A Production Ready Solution.](https://medium.com/analytics-vidhya/dajngo-with-nginx-gunicorn-aaf8431dc9e0)  
@@ -79,5 +85,6 @@
 [Dockerizing a Python Django Web Application](https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application)  
 [Build and Deploy a Django Application using Docker and Compose](https://levelup.gitconnected.com/build-and-deploy-a-django-application-using-docker-and-compose-9bf0d8dc5ebb)  
 [DEPOYING DJANGO WITH DOCKER COMPOSE](https://londonappdeveloper.com/deploying-django-with-docker-compose/)
+add udemy...
 
 
