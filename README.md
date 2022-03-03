@@ -73,7 +73,7 @@
 
 ## 📖 Points For Improvement
 
-## 📖 Selection of echnology
+## 📖 Selection of Technology
 
 ## 📖 References  
 [Django with Nginx, Gunicorn A Production Ready Solution.](https://medium.com/analytics-vidhya/dajngo-with-nginx-gunicorn-aaf8431dc9e0)  
