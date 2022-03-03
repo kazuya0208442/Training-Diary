@@ -63,17 +63,17 @@
 ![](https://user-images.githubusercontent.com/87218628/145961368-510f1b40-7187-4271-9bb2-2fadcbd43c84.jpg)
 
 
-## 📖 Development Purpose
+## :seedling: Development Purpose
 
-## 📖 Strength
+## :sunny: Strength
 
-## 📖 Business Plan
+## :moneybag: Business Plan
 
-## 📖 Difficulty
+## :tired_face: Difficulty
 
-## 📖 Points For Improvement
+## :bulb: Points For Improvement
 
-## 📖 Selection of Technology
+## 🎨 Selection of Technology
 
 ## 📖 References  
 [Django with Nginx, Gunicorn A Production Ready Solution.](https://medium.com/analytics-vidhya/dajngo-with-nginx-gunicorn-aaf8431dc9e0)  
