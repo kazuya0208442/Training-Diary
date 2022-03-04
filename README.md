@@ -1,4 +1,4 @@
-# 📱 Training-Diary (運動日誌アプリ) 
+# 📱 運動日誌アプリ
 
 オリンピック強化選手になると、**運動日誌の提出**が義務付けられます。ただ、いくつか不便な点があります。
 - 記入欄が狭すぎる
@@ -26,7 +26,7 @@
 <img src="https://user-images.githubusercontent.com/87218628/152968926-8a1f71e5-1149-4e0f-8d17-01aa01be40e6.png" width="70%">
 
 
-##  ⚡️ Features  
+##  ⚡️ おすすめ機能 
 - 目標にしている選手のプレーが**自動**で流れます！！
 
 
@@ -38,8 +38,7 @@
 
 
 
-## 🎨 Built With  
-以下の技術を使用しました。
+## 🎨 使用技術  
 - Python 3.9.9  
 - Django 3.2.11
 - PostgreSQL 13.5
@@ -63,7 +62,7 @@
 ![](https://user-images.githubusercontent.com/87218628/145961368-510f1b40-7187-4271-9bb2-2fadcbd43c84.jpg)
 
 
-## :seedling: Development Purpose
+## :seedling: なぜ作ったの？
 日本は**2004年からオリンピック選手育成事業をスタート**しました。小中学生の中で優れた運動能力を持った選手を選抜して、**約10種目のスポーツを専門の指導者の下で訓練し、オリンピック出場に最適な種目を決定**します。私は、グラウンドホッケー、水球、ライフル射撃、フェンシング、円盤投げ、ウエイトリフティング、ラグビー、バスケ、ボクシング、をご指導して頂きました。今でも、貴重な経験として、私の心の中に刻み込まれています。  
 <br>
 
@@ -88,17 +87,17 @@
   - スタッフの業務効率化により、**子供たちへのサポート**をより強固に。 -->
 
 
-## :sunny: Strength
+## :sunny: 1番こだわったところ
 
-## :moneybag: Business Plan
+## :moneybag: 収益化プラン
 
-## :tired_face: Difficulty
+## :tired_face: 難しかったところ & 解決方法
 
-## :bulb: Points For Improvement
+## :bulb: 改善するべき点
 
-## 🎨 Selection of Technology
+## 🎨 なぜその技術を使ったの？
 
-## :hourglass: Production Period
+## :hourglass: 開発期間
 
 ## 📖 References  
 [Django with Nginx, Gunicorn A Production Ready Solution.](https://medium.com/analytics-vidhya/dajngo-with-nginx-gunicorn-aaf8431dc9e0)  
