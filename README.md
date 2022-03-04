@@ -94,6 +94,12 @@
 ## :tired_face: 難しかったところ & 解決方法
 
 ## 🎨 なぜその技術を使ったの？
+- Python / Django
+- uwsgi
+- nginx
+- PostgreSQL
+- Docker / Docker-compose
+- AWS
 
 ## :hourglass: 開発期間
 2021年9月 ~ 現在
