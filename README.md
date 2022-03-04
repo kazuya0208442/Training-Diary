@@ -93,11 +93,11 @@
 
 ## :tired_face: 難しかったところ & 解決方法
 
-## :bulb: 改善するべき点
-
 ## 🎨 なぜその技術を使ったの？
 
 ## :hourglass: 開発期間
+
+## :bulb: 改善するべき点
 
 ## 📖 References  
 [Django with Nginx, Gunicorn A Production Ready Solution.](https://medium.com/analytics-vidhya/dajngo-with-nginx-gunicorn-aaf8431dc9e0)  
