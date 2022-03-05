@@ -7,6 +7,9 @@
 #### ・紛失リスク
 
 
+<br>
+
+
 この問題を解決するべく、運動日誌アプリを製作しました。:point_right:  &nbsp;[http://kazuya-portfolio.com](http://kazuya-portfolio.com/)  　
 
 
