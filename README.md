@@ -13,7 +13,7 @@
 アプリ内の記入例は**当時の私の運動日誌**をそのまま使ってます(^^♪  
 <br>
 
-<img src="https://media.giphy.com/media/62rfKf9XfUsNKwnWyo/giphy.gif" width="60%">
+<img src="https://media.giphy.com/media/62rfKf9XfUsNKwnWyo/giphy.gif" width="100%">
 
 #   :page_facing_up: 実際の運動日誌
  ### **現在使用されている運動日誌**です。
