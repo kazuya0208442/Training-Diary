@@ -111,7 +111,7 @@
 
 <br>
 
-# :moneybag: 収益化プラン  
+# :moneybag:  どうやって収益化するの？
 
 <br>  
 
@@ -132,7 +132,7 @@ webサーバーからのリクエストを受けて、アプリケーション�
 ### ・PostgreSQL -> データベースサーバー
 主な RDBMS (Relational DataBase Management System) は、Oracle Database、MySQL、SQL Server、PostgreSQL、などが挙げられます。特に、PostgreSQL はオープンソースのデータベースソフトウェアであり、無料で利用可能です。MySQL や Oracle Database と比較すると PostgreSQL は、機能性が劣る部分もありますが、導入コストが低く、エンジニア修行中の私にとっては魅力的でした。また、Django と組み合わせて開発している情報が多く、学習コストが低いところも、初学者にとっては優しいところだと思います。
 
-### ・Docker / Docker-compose -> インフラ
+### ・Docker / Docker-Compose -> インフラ
 
 
 
