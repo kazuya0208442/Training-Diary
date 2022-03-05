@@ -13,17 +13,24 @@
 アプリ内の記入例は**当時の私の運動日誌**をそのまま使ってます(^^♪  
 <br>
 
-<img src="https://media.giphy.com/media/62rfKf9XfUsNKwnWyo/giphy.gif" width="100%">
+<img src="https://media.giphy.com/media/62rfKf9XfUsNKwnWyo/giphy.gif" width="100%">   
 
-#   :page_facing_up: 実際の運動日誌
- ### **現在使用されている運動日誌**です。
+<br>
+<br>
+
+#   :page_facing_up: 実際の運動日誌  
+
+
+ ### **現在使用されている運動日誌**です。  
+ <br>
 
 <img src="https://1.bp.blogspot.com/-3FZ1k9yqBpY/YSsJhBkrKUI/AAAAAAAALX4/kooOBy9ikyQItw8BJdA0jqLyMMAiCnTRgCLcBGAsYHQ/s1754/Jr.%25E6%2597%25A5%25E8%25AA%258C%2B%25E8%25A1%25A8.jpg" width="70%">
 
 ### **私の時代の運動日誌**です。この２枚の写真しか残っていませんでした...😢 <br> 見にくい写真でごめんなさい。
 
 <img src="https://user-images.githubusercontent.com/87218628/150491732-94782151-2c42-497f-b475-69f65a2287dd.JPG" width="70%">
-<img src="https://user-images.githubusercontent.com/87218628/152968926-8a1f71e5-1149-4e0f-8d17-01aa01be40e6.png" width="70%">
+<img src="https://user-images.githubusercontent.com/87218628/152968926-8a1f71e5-1149-4e0f-8d17-01aa01be40e6.png" width="70%">  
+<br>
 
 
 #  ⚡️ おすすめ機能 
@@ -34,9 +41,9 @@
 
 
 
-- **レスポンシブ対応！！**
+- **レスポンシブ対応！！**  
 
-
+<br>
 
 # 🎨 使用技術  
 - Python 3.9.9  
@@ -51,18 +58,27 @@
 - HTML
 - CSS
 - Javascript
-- **1人疑似チーム開発 ( GitHub-Flow : issue -> feature branch -> pull request)**
+- **1人疑似チーム開発 ( GitHub-Flow : issue -> feature branch -> pull request)**  
+
+<br>
 
 # 🛠 Unit Test 
 - [YouTube Link を改造する関数](https://github.com/kazuya0208442/Training-Diary/blob/main/app/core/change_link.py)
 - [大会までの残り日数を計算する関数](https://github.com/kazuya0208442/Training-Diary/blob/main/app/core/day_computed.py)  　
+<br>
 
 
 # :trident: Infrastructure
-![](https://user-images.githubusercontent.com/87218628/145961368-510f1b40-7187-4271-9bb2-2fadcbd43c84.jpg)
+![](https://user-images.githubusercontent.com/87218628/145961368-510f1b40-7187-4271-9bb2-2fadcbd43c84.jpg)  
+<br>
 
+### ・Nginx (Reverse Proxy) の役割
+バックエンドのアプリケーションサーバーは、同時に処理できるプロセスの数に限界があり(マルチプロセスモデル)、メモリを大量に消費する。本来アプリケーションサーバーは、動的なリクエストを処理するために用意されているものである。したがって、静的ファイルにまで応答しなければならない状況の場合、数に限りのあるプロセスが無駄に消費され、ページ表示の速度が低下し、ユーザー体験の質が落ちてしまう。  
+<br>
+この問題を防ぐために、Reverse Proxy を入れて、(ネットワーク的に) アプリケーションサーバーの手前に配置する。そして静的ファイルなど、アプリケーションサーバーを介さずに応答できるものは Reverse Proxy が直接クライアントに応答し、アプリケーションサーバーでなければ応答できないリクエストのみアプリケーションサーバーに転送する。今回は、「static volume」というvolume を作成し、そこに静的ファイルを配置することで、Reverse Proxy は、静的ファイルを配信できる。  
+<br>
 
-# :seedling: なぜ作ったの？
+# :seedling: なぜ作ったの？  
 ### １. そもそも、日本のアスリート育成事業ってどんなことをしているの？
 日本は2004年からオリンピック選手育成事業をスタートしました。小中学生の中で優れた運動能力を持った選手を選抜して、**約10種目のスポーツを専門の指導者の下で訓練し、オリンピック出場に最適な種目を決定**します。私は、グラウンドホッケー、水球、ライフル射撃、フェンシング、円盤投げ、ウエイトリフティング、ラグビー、バスケ、ボクシング、をご指導して頂きました。今でも、貴重な経験として、私の心の中に刻み込まれています。  
 <br>
@@ -89,13 +105,19 @@
   - 競技成績を上げて、**世界を代表するような選手へ**。
   - スタッフの業務効率化により、**子供たちへのサポート**をより強固に。 -->
 
+<br>  
 
-# :sunny: 1番こだわったところ
+# :sunny: 1番こだわったところ  
 
+<br>
 
-# :moneybag: 収益化プラン
+# :moneybag: 収益化プラン  
 
-# :tired_face: 難しかったところ & 解決方法
+<br>  
+
+# :tired_face: 難しかったところ & 解決方法  
+
+<br>  
 
 # 🎨 なぜその技術を使ったの？
 ### ・Python / Django -> バックエンド言語 / フレームワーク  
@@ -119,7 +141,9 @@ webサーバーからのリクエストを受けて、アプリケーション�
 # :hourglass: 開発期間
 2021年9月 ~ 現在
 
-# :bulb: 改善するべき点
+# :bulb: 改善するべき点  
+
+<br>  
 
 # 📖 References  
 [Django with Nginx, Gunicorn A Production Ready Solution.](https://medium.com/analytics-vidhya/dajngo-with-nginx-gunicorn-aaf8431dc9e0)  
