@@ -54,7 +54,7 @@
 - Django 3.2.11
 - PostgreSQL 13.5
 - nginx
-- Docker / Docker-compose
+- Docker / Docker-ompose
 - AWS
   - VPC
   - EC2
