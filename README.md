@@ -266,4 +266,24 @@ Docker の最大のメリットは、「バージョンの差異や環境の差�
 [Build and Deploy a Django Application using Docker and Compose](https://levelup.gitconnected.com/build-and-deploy-a-django-application-using-docker-and-compose-9bf0d8dc5ebb)  
 [DEPOYING DJANGO WITH DOCKER COMPOSE](https://londonappdeveloper.com/deploying-django-with-docker-compose/)  
 
+<br>
+
+# 🌱 スポーツ経験
+- **小学生**
+  - バスケ
+  - 水泳
+- **中学生**
+  - バスケ
+  - グラウンドホッケー
+  - フェンシング
+  - 水球
+  - ライフル射撃
+  - ウエイトリフティング
+  - ボクシング
+  - 陸上投擲
+  - ラグビー
+ - **高校生**
+   - ラグビー
+ - **大学生**
+   - ラグビー
 
