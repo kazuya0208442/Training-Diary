@@ -14,6 +14,7 @@ class Home(ListView):
    
    def get_context_data(self, **kwargs):
 
+       # [Decimal('11.16'), Decimal('7.63'), Decimal('8.53')] のような 'Decimal' prefix を取り除くために float() を用いて、小数値を取得。
        def _to_float(x_list):
            return [float(v) for v in x_list]
        
