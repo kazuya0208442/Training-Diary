@@ -24,13 +24,18 @@ class Home(ListView):
 
        # 運動時間を取得
        t_time = Training.objects.values_list('training_time', flat=True)
+       # DECIMAL prefix を外す
        t_time_new = _to_float(t_time)
+
        # 体幹トレーニング時間を取得
        stability_time = Training.objects.values_list('stability_time', flat=True)
+       # DECIMAL prefix を外す
        stability_time_new = _to_float(stability_time)
+
        # 睡眠時間を取得
        s_time = Training.objects.values_list('sleeping_hours', flat=True)
-       s_time_new = _to_float(s_time)    # DECIMAL prefix を外す方法
+       # DECIMAL prefix を外す
+       s_time_new = _to_float(s_time)    
 
        # 長期目標のYouTube Link を取得
        link = Target.objects.values('long_target_link').get(pk=1)['long_target_link']
