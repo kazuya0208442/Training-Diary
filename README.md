@@ -45,6 +45,7 @@
 
 
 ![④](https://user-images.githubusercontent.com/87218628/162596674-0aeeafda-c84a-4b3e-babd-0b886cec257c.jpg)
+※強化選手のホームページを参照しています。
 
 <!-- <img src="https://user-images.githubusercontent.com/87218628/162596537-efe70d82-1780-4ca7-adfb-a10780251dcf.JPG" width="100%">    -->
 
@@ -164,6 +165,7 @@ Docker-Compose の欠点は、単一のサーバー上でしか動かせない�
 ![IMG_6449](https://user-images.githubusercontent.com/87218628/162596623-0ddabe54-8f35-4b0f-a8bf-e364ee9006b9.jpg)
 
 ![IMG_5278](https://user-images.githubusercontent.com/87218628/162598077-6ebe1d5d-a587-4960-9349-f7ec421b94d0.JPG)
+※強化選手のホームページを参照しています。
 
 
 <br>
@@ -176,6 +178,7 @@ Docker-Compose の欠点は、単一のサーバー上でしか動かせない�
 <br>
 
 ![知的](https://user-images.githubusercontent.com/87218628/162596651-ca5026f3-7a84-4c2b-a8ee-9668bb695201.jpg)
+※強化選手のホームページを参照しています。
 
 
 <br>
@@ -220,7 +223,8 @@ Docker-Compose の欠点は、単一のサーバー上でしか動かせない�
 
 <br>
 
-![24f0e882](https://user-images.githubusercontent.com/87218628/162596721-44f0686e-a353-46e8-acc9-06f889a8839d.jpg)
+![24f0e882](https://user-images.githubusercontent.com/87218628/162596721-44f0686e-a353-46e8-acc9-06f889a8839d.jpg)  
+この潤沢な予算、、、
 
 
 
