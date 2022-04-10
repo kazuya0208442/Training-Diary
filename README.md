@@ -9,7 +9,11 @@
 
 <img src="https://user-images.githubusercontent.com/87218628/162598025-a61a9843-98b4-4d6c-a049-170019c710b4.jpg" width="100%">
 
+※強化選手のホームページを参照しています。  
+
+
 <br>
+
 
 私の場合は11種目のスポーツを経験させていただきました。
 
