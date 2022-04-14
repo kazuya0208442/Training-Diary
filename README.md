@@ -178,6 +178,7 @@ Docker-Compose の欠点は、単一のサーバー上でしか動かせない�
 <br>
 
 ![知的](https://user-images.githubusercontent.com/87218628/162596651-ca5026f3-7a84-4c2b-a8ee-9668bb695201.jpg)
+![IMG_7339](https://user-images.githubusercontent.com/87218628/162598559-5f35e656-2441-4bf8-8ddc-366f42e2e760.JPG)
 ※強化選手のホームページを参照しています。
 
 
