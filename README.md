@@ -134,8 +134,11 @@
 
 
 # :trident: Infrastructure
-![](https://user-images.githubusercontent.com/87218628/145961368-510f1b40-7187-4271-9bb2-2fadcbd43c84.jpg)  
+<!-- ![](https://user-images.githubusercontent.com/87218628/145961368-510f1b40-7187-4271-9bb2-2fadcbd43c84.jpg)   -->
+![training drawio](https://user-images.githubusercontent.com/87218628/163794477-8350ab4a-8b86-4489-9658-e665b9dedcfe.png)
+
 <br>
+
 
 ## ・Nginx (Reverse Proxy) の役割
 <!-- バックエンドのアプリケーションサーバーは、同時に処理できるプロセスの数に限界があり(マルチプロセスモデル)、メモリを大量に消費する。本来アプリケーションサーバーは、動的なリクエストを処理するために用意されているものである。したがって、静的ファイルにまで応答しなければならない状況の場合、数に限りのあるプロセスが無駄に消費され、ページ表示の速度が低下し、ユーザー体験の質が落ちてしまう。   -->
