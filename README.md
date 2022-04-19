@@ -328,7 +328,8 @@ Docker の最大のメリットは、「バージョンの差異や環境の差�
 <br>
 
 <!-- ![er_diagram](https://user-images.githubusercontent.com/87218628/157569828-f782a609-1cc9-4332-9b48-d1cdaf330983.png) -->
-![training_database drawio](https://user-images.githubusercontent.com/87218628/163800309-b053bf1b-15ad-4acd-9256-cd34b2d0a81c.png)
+<!-- ![training_database drawio](https://user-images.githubusercontent.com/87218628/163800309-b053bf1b-15ad-4acd-9256-cd34b2d0a81c.png) -->
+<img src="https://user-images.githubusercontent.com/87218628/163800309-b053bf1b-15ad-4acd-9256-cd34b2d0a81c.png" width="100%">
 
 <br>
 
