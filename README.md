@@ -44,12 +44,12 @@
 <br> -->
 
 
-![④](https://user-images.githubusercontent.com/87218628/162596674-0aeeafda-c84a-4b3e-babd-0b886cec257c.jpg)
-※強化選手のホームページを参照しています。
+<!-- ![④](https://user-images.githubusercontent.com/87218628/162596674-0aeeafda-c84a-4b3e-babd-0b886cec257c.jpg)
+※強化選手のホームページを参照しています。 -->
 
 <!-- <img src="https://user-images.githubusercontent.com/87218628/162596537-efe70d82-1780-4ca7-adfb-a10780251dcf.JPG" width="100%">    -->
 
-<br>
+
 
 
 # ⚡️ スポーツ引退後の OB としての活動
