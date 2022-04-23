@@ -128,6 +128,9 @@
 - Javascript
 - **1人疑似チーム開発 ( GitHub-Flow : issue -> feature branch -> pull request)**  
 
+![2022-04-23 (3)](https://user-images.githubusercontent.com/87218628/164863033-140e807f-d346-4dfe-8481-16e1d1aca8b0.png)
+
+
 <br>
 
 # 🛠 Unit Test 
@@ -166,7 +169,6 @@ Docker-Compose の欠点は、単一のサーバー上でしか動かせない�
 
 ![IMG_6449](https://user-images.githubusercontent.com/87218628/162596570-b19d9b5d-905f-4e02-8e6f-113a684ba67f.jpeg)
 ![IMG_6449](https://user-images.githubusercontent.com/87218628/162596581-697d56fe-379d-4a9a-a7e4-d5b49980ee6e.JPG)
-![IMG_0479](https://user-images.githubusercontent.com/87218628/163671246-87ac4f47-42bb-4baf-9e1d-14ac05c1fb3d.JPG)
 ![IMG_6449](https://user-images.githubusercontent.com/87218628/162596623-0ddabe54-8f35-4b0f-a8bf-e364ee9006b9.jpg)
 ![IMG_5278](https://user-images.githubusercontent.com/87218628/162598077-6ebe1d5d-a587-4960-9349-f7ec421b94d0.JPG)
 ※強化選手のホームページを参照しています。
