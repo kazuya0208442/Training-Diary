@@ -159,6 +159,21 @@ Docker-Compose の欠点は、単一のサーバー上でしか動かせない�
 
 <br>
 
+## 🎉 &nbsp; 参考にした文献 / URL 
+インフラを構築するにあたって参考にした海外のエンジニアの方の記事をご紹介します。Google検索の設定地域をアメリカ合衆国にして、「Django how to deploy」「Django AWS」のように検索をして、1つずつタブで開き、最も詳細で分かりやすい英語で書かれている記事を30個ほど選びまして、その中からさらに使用技術などを分類して、以下の9つの記事を選びました。すべてのコードの上に、日本語に翻訳した解説を書いており、あとで見返したときに復習できるようにしました。
+
+[Django with Nginx, Gunicorn A Production Ready Solution.](https://medium.com/analytics-vidhya/dajngo-with-nginx-gunicorn-aaf8431dc9e0)  
+[How To Deploy Django App with Nginx, Gunicorn, PostgreSQL and Let’s Encrypt SSL on Ubuntu](https://djangocentral.com/deploy-django-with-nginx-gunicorn-postgresql-and-lets-encrypt-ssl-on-ubuntu/)  
+[Creating and Deploying a Django Application to AWS](https://www.pulumi.com/blog/deploying-a-django-application-to-aws/)  
+[Deploying a Production-ready Django app on AWS](https://dev.to/rmiyazaki6499/deploying-a-production-ready-django-app-on-aws-1pk3)  
+[Deploying Django Applications to AWS EC2 with Docker](https://stackabuse.com/deploying-django-applications-to-aws-ec2-with-docker/)  
+[Dockerizing Django with Postgres, Gunicorn, and Nginx](https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/)  
+[Dockerizing a Python Django Web Application](https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application)  
+[Build and Deploy a Django Application using Docker and Compose](https://levelup.gitconnected.com/build-and-deploy-a-django-application-using-docker-and-compose-9bf0d8dc5ebb)  
+[DEPOYING DJANGO WITH DOCKER COMPOSE](https://londonappdeveloper.com/deploying-django-with-docker-compose/)  
+
+<br>
+
 
 # :seedling: なぜ開発しようと思ったのですか？  
 ## １. そもそも、日本のアスリート育成事業ってどんなことをしているのですか？
