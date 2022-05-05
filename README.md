@@ -7,7 +7,9 @@
 
 ![hero2-min-min](https://user-images.githubusercontent.com/87218628/162398890-064f4258-acba-4593-8eed-350e4adef300.jpg)
 <img src="https://user-images.githubusercontent.com/87218628/162598025-a61a9843-98b4-4d6c-a049-170019c710b4.jpg" width="100%">
-※強化選手のホームページを参照しています。  
+<img src="https://user-images.githubusercontent.com/87218628/166881641-2d7310c6-69ad-4c0d-8736-5b481c3cfc26.png" width="100%">
+
+<!-- ※強化選手のホームページを参照しています。   -->
 
 
 <br>
@@ -55,8 +57,7 @@
 <!-- - 上記に加え、「一流アスリートほど子供のころはいろんな競技をしている理由」についての[論文](https://journals.sagepub.com/doi/abs/10.1177/1745691620974772)をスタッフの方に紹介しました。 -->
 <!-- ![2022-04-22](https://user-images.githubusercontent.com/87218628/164668490-07c67878-6bcb-49b5-9cf2-6a0f383d1888.png) -->
 <!-- ![2022-04-23](https://user-images.githubusercontent.com/87218628/164817407-3c48e4c6-7e12-4146-9eda-0cbc6ffb90f1.png) -->
-![2022-04-23 (2)](https://user-images.githubusercontent.com/87218628/164861978-adbd9e91-b282-4179-9857-41b9d03742b3.png)
-
+<img src="https://user-images.githubusercontent.com/87218628/166880283-879b625a-8e55-46d1-b8e5-fa35908eb8ca.png" width="100%">
 
 <br>
 
@@ -128,7 +129,7 @@
 - Javascript
 - **1人疑似チーム開発 ( GitHub-Flow : issue -> feature branch -> pull request)**  
 
-![2022-04-23 (3)](https://user-images.githubusercontent.com/87218628/164863033-140e807f-d346-4dfe-8481-16e1d1aca8b0.png)
+<img src="https://user-images.githubusercontent.com/87218628/166880758-6c7b6875-70a6-4a7f-8010-eddc29928431.png" width="100%">
 
 
 <br>
@@ -213,6 +214,8 @@ Docker-Compose の欠点は、単一のサーバー上でしか動かせない�
 
 ただ、国のスタッフの方達の中でITに詳しい人はかなり少なそうでした。多くの税金を投入して行われている国の取り組みですので、誰かが、内部の活動をDX化するような行動を起こさなければいけません。そこで、自分でアプリを作って、報告会の時に国にURLを送ればいいんじゃないか、と思いまして、プログラミングの勉強を始めました。実際に作ってみると、本当に楽しくて、エンジニアという職業に興味を持つようになり、お仕事としてやってみたいと思うようになりました。世の中にある様々なサービスがどうやって作られているのか、どんなコードで書かれているのか、非常に興味があります。
 
+<img src="https://user-images.githubusercontent.com/87218628/166880942-3315e025-e846-4e94-8585-54afa077adeb.png" width="100%">
+
 <!-- 
 スタッフの方たちは、**担当になった選手がどうやったらオリンピックに出場できるのか**、そのことを常に考えながら過ごしています。運動日誌の情報を基に、トレーニング計画や食事内容、生活習慣などのアドバイスを行います。私の当時の日誌を上部に添付しておりますが、これだけびっしりと書きこんでしまい、相当見辛いのにもかかわらず、赤ペンでアンダーラインまで引いて、丁寧にアドバイスをしてくださっています。**これだけの熱意をもって、子供たちの指導にあたっているスタッフのためにも、業務を効率化するようなシステムが早くできたらいいなと思っています。**
  -->
@@ -283,7 +286,7 @@ Docker-Compose の欠点は、単一のサーバー上でしか動かせない�
 ## ・文字列の規則性を見つけた！！
 YouTube リンクの文字列の中に、何か規則性があるのではないかと思い、たくさんの YouTube リンクを並べて、要素を一つ一つ分解しました。すると、よく見ると、ランダムな文字列の文字数は１１文字で、その前に「embed/」という文字列が必ず存在することが分かりました。そこで、pythonの文字列検索を行い、「embed/」のインデックスを取得し、その１１文字後ろに、指定の文字列をくっつけることで、YouTube リンクの改造に成功しました:blush:
 
-![2022-04-23 (4)](https://user-images.githubusercontent.com/87218628/164888954-f9ddf4a0-a801-4c66-8471-b238d6325900.png)
+<img src="https://user-images.githubusercontent.com/87218628/166881334-6453692a-08e7-4b1d-a6a6-c29008a46c12.png" width="100%">
 
 
 <br>  
