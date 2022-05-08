@@ -1,4 +1,4 @@
-# 📱 運動日誌アプリ :point_right:  &nbsp;[http://kazuya-portfolio.com](http://kazuya-portfolio.com/)  
+# 📱 運動日誌アプリ :point_right:  &nbsp;<span><a href="http://kazuya-portfolio.com/" target="_blank">http://kazuya-portfolio.com</a></span>
 
 オリンピック強化選手になると、**運動日誌の提出**が義務付けられます。ただ、いくつか不便な点があります。
 ### ・記入欄が狭すぎる
